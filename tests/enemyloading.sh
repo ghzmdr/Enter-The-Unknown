@@ -1,0 +1,1 @@
+g++ --std=c++11 -L/usr/include/json -ljsoncpp -L/usr/include/SFML/ -I/usr/lib -lsfml-graphics -lsfml-window -lsfml-system -I./include src/Utils/EnemyLoader.cpp tests/enemyloading.cpp -o tests/enemyloading.out
