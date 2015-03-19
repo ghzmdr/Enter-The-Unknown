@@ -6,10 +6,18 @@
 class Enemy : public Entity
 {
 public:
-    Enemy(const std::string& enemyFilePath);
+    Enemy();
+
+    virtual void animate();
+
+    void setDamage(u_short amount);
+    u_short getDamage();
 
 
-private:
+private:    
+    u_short damage;
+
+
     //Every enemy has:
     // + Scripted rules
     // + An amount of damage dealt

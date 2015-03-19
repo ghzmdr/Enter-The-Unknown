@@ -10,7 +10,7 @@ context{window, textures, fonts},
 
 stateStack{context}
 {
-    window.setFramerateLimit(60);    
+    //window.setFramerateLimit(60);    
     window.setVerticalSyncEnabled(true);
     registerStates();
     

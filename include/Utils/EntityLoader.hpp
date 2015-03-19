@@ -4,13 +4,12 @@
 #include <SFML/System/Vector2.hpp>
 #include <SFML/Graphics/Rect.hpp>
 
-#include <json/json.h>
-#include <fstream>
+#include "Utils/JsonParser.hpp"
 
-class EnemyLoader
+class EntityLoader : private JsonParser
 {
 public:
-    EnemyLoader(const std::string &filename);
+    EntityLoader(const std::string &filename);
 
     u_short getDamage();
     u_short getLives();
@@ -28,12 +27,7 @@ public:
 private:
     void loadFrames();
     void loadSubFrames(const std::string &subField, std::vector<u_short> &destination);
-
-
-    Json::Value root;
-    Json::Reader reader;
-    std::string filename;
-
+    
     Json::Value jFrames;
 };
 

@@ -3,7 +3,6 @@
 
 #include "States/State.hpp"
 #include "World.hpp"
-//TODO: Write Level class
 
 class GameState : public State
 {

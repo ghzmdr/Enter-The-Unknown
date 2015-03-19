@@ -1,9 +1,9 @@
 #ifndef PLAYER_HPP
 #define PLAYER_HPP
 
-#include "Entities/RunningEntity.hpp"
+#include "Entities/Entity.hpp"
 
-class Player : public RunningEntity
+class Player : public Entity
 {
     
 static constexpr float playerSpeed{1.5};
@@ -13,7 +13,7 @@ public:
     Player();    
     virtual void update();
 private:
-   virtual void animate();
+   //virtual void animate();
 };
 
 #endif

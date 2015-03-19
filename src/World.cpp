@@ -4,18 +4,26 @@
 #include "Utils/Utility.hpp"
 #include <sstream>
 
-World::World(State::Context con, WorldData data)
-:context{con}, textures{*(con.textures)}, fonts{*(con.fonts)}, 
-data{data}
+
+World::World(State::Context con, const std::string &floorFileName)
+:context{con}, textures{*(con.textures)}, fonts{*(con.fonts)},
+floorData{floorFileName}
 {        
     stats.setFont(fonts[Fonts::Main]);
     stats.setCharacterSize(15);
     textures[Textures::WorldTiles].setSmooth(false);
 
-    player.setTexture(textures[Textures::Player]);
-    player.setTextureRect({0,0,14,32});
-    player.setPosition(data.getSpawnPosition().x, data.getSpawnPosition().y);
+
+    EntityLoader playerLoader{"./data/player/player.json"};
+
+    player.setTexture(textures[playerLoader.getSheetFileName()]);
+    auto psize = playerLoader.getSize();
+    player.setTextureRect({0,0,psize.x,psize.y});
+
+    player.setPosition(floorData.getSpawnPosition().x, floorData.getSpawnPosition().y);
     
+    player.setWalkingAnimFrames(playerLoader.getMovementFrames());
+
     worldView.zoom(.5);
     worldView.setSize(context.window->getSize().x/2, context.window->getSize().y/2);
     worldView.setCenter(player.getPosition());
@@ -25,23 +33,27 @@ data{data}
 
 void World::loadData()
 {   
-    tileSize = data.getTileSize();
+    tileSize = floorData.getTileSize();
     drawOffset = tileSize * 2;    
     
-    bounds = sf::IntRect{0, 0, data.getWidth(), data.getHeight()};
+    auto fSize = floorData.getFloorSize();
+    bounds = {{0,0,}, fSize};
     
+    auto map = floorData.getMap();
+    tileMap.load(textures[Textures::WorldTiles], map, floorData.getTileSize());
+
     sf::Vector2u tileSheetSize = textures[Textures::WorldTiles].getSize();
 
     int maxTilesInRow = tileSheetSize.x / tileSize;
 
-    map2Layer(data.getMap(), bgLayer, tileSize, maxTilesInRow);
-    map2Layer(data.getCollidables(), collidablesLayer, tileSize, maxTilesInRow);
+    //map2Layer(floorData.getMap(), bgLayer, tileSize, maxTilesInRow);
+    map2Layer(floorData.getCollidables(), collidablesLayer, tileSize, maxTilesInRow);
     
 }
 
 void World::update(sf::Time deltaT)
 {                
-    player.running = sf::Keyboard::isKeyPressed(sf::Keyboard::Z);
+    player.setRunning(sf::Keyboard::isKeyPressed(sf::Keyboard::Z));
     movePlayer();
     stats.setString("Player Speed: " + toString(player.getSpeed()) + "\ntop: " + toString(player.top()) + "\nright: " + toString(player.right()) + "\nbottom: " + toString(player.bottom()) + "\nleft: " + toString(player.left()));    
     player.update();    
@@ -50,19 +62,21 @@ void World::update(sf::Time deltaT)
 void World::draw()
 {       
     worldView.setCenter(player.getPosition());    
-    context.window->setView(worldView);   
+    context.window->setView(worldView);       
+/*
 
     for (auto &tile : bgLayer) 
        if (isInBounds(tile))
             context.window->draw(tile);            
-    
+*/  
+    context.window->draw(tileMap);
     context.window->draw(player);
 
-    for (auto obj : collidablesLayer)
+    for (auto &obj : collidablesLayer)
         if (isInBounds(obj))
             context.window->draw(obj);
 
-    drawStats();
+   drawStats();
 }
 
 void World::drawStats()
@@ -100,7 +114,7 @@ void World::movePlayer()
 
 
 
-bool World::isInBounds(sf::Sprite& tile)
+bool World::isInBounds(sf::Sprite &tile)
 {
     //TILE LEFT X IS > WORLD LEFT X (WORLD CENTER X - HALF WORLD WIDTH)
     bool inLeft = tile.getPosition().x >= worldView.getCenter().x - (worldView.getSize().x/2 + drawOffset);
@@ -121,7 +135,7 @@ bool World::isInBounds(sf::Sprite& tile)
 }
 
 template<typename Object>
-void World::map2Layer(const std::vector<std::vector<int>> &source, std::vector<Object> &destination, int tileSize, int rowMax)
+void World::map2Layer(const std::vector<std::vector<short>> &source, std::vector<Object> &destination, int tileSize, int rowMax)
 {
     for (int i = 0; i < source.size(); i++)
         for (int j = 0; j < source[i].size(); j++)
@@ -129,7 +143,7 @@ void World::map2Layer(const std::vector<std::vector<int>> &source, std::vector<O
             {
                 sf::Vector2i tilePosition = {source[i][j] * tileSize, (source[i][j] * tileSize) % rowMax};
                 Object tile{textures[Textures::WorldTiles], {tilePosition, {tileSize, tileSize}}};
-                tile.setPosition({j * tileSize * 1.f, i * tileSize * 1.f});                
+                tile.setPosition(j * tileSize , i * tileSize);                
                 destination.push_back(tile);
             }
 }

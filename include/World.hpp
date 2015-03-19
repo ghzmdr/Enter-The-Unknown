@@ -7,15 +7,19 @@
 #include <SFML/Graphics.hpp>
 
 #include "States/State.hpp"
-#include "WorldData.hpp"
 #include "Player.hpp"
+
+#include "TileMap.hpp"
+
+#include "Utils/EntityLoader.hpp"
+#include "Utils/FloorLoader.hpp"
 
 #include "Resource/Resources.hpp"
 
 class World : private sf::NonCopyable
 {
 public:
-	explicit World(State::Context context, WorldData data);
+	explicit World(State::Context context, const std::string &floorFileName);
 
 	void update(sf::Time deltaT);
 	void draw();
@@ -23,10 +27,9 @@ public:
 
 private:    
     void loadData();
-    WorldData data;
 
     template<typename Object>
-    void map2Layer(const std::vector<std::vector<int>> &source, std::vector<Object> &destination, int tileSize, int rowMax);
+    void map2Layer(const std::vector<std::vector<short>> &source, std::vector<Object> &destination, int tileSize, int rowMax);
     std::vector<sf::Sprite> bgLayer;
     std::vector<GameObject> collidablesLayer;
 
@@ -42,6 +45,10 @@ private:
     
     sf::Text stats;
     void drawStats();
+
+    FloorLoader floorData;
+
+    TileMap tileMap;
 
     State::Context context;
     TextureManager &textures;

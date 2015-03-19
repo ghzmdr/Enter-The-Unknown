@@ -19,6 +19,7 @@ void GameObject::setTextureRect(sf::IntRect rect)
 sf::Vector2i GameObject::getSize()   
 {return {getTextureRect().width, getTextureRect().height};}
 
+
 float GameObject::left()      {return getPosition().x - getTextureRect().width/2;}
 float GameObject::right()     {return getPosition().x + getTextureRect().width/2;}    
 float GameObject::top()       {return getPosition().y - getTextureRect().height/2;}
