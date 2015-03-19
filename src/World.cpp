@@ -4,8 +4,9 @@
 #include "Utils/Utility.hpp"
 #include <sstream>
 
-World::World(State::Context con, WorldData d)
-:context{con}, textures{*(con.textures)}, fonts{*(con.fonts)}, data{d}
+World::World(State::Context con, WorldData data)
+:context{con}, textures{*(con.textures)}, fonts{*(con.fonts)}, 
+data{data}
 {        
     stats.setFont(fonts[Fonts::Main]);
     stats.setCharacterSize(15);
@@ -14,7 +15,6 @@ World::World(State::Context con, WorldData d)
     player.setTexture(textures[Textures::Player]);
     player.setTextureRect({0,0,14,32});
     player.setPosition(data.getSpawnPosition().x, data.getSpawnPosition().y);
-
     
     worldView.zoom(.5);
     worldView.setSize(context.window->getSize().x/2, context.window->getSize().y/2);

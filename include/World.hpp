@@ -6,7 +6,6 @@
 #include <SFML/Graphics/RenderWindow.hpp>
 #include <SFML/Graphics.hpp>
 
-#include "SceneNode/SceneNode.hpp"
 #include "States/State.hpp"
 #include "WorldData.hpp"
 #include "Player.hpp"
@@ -22,34 +21,31 @@ public:
 	void draw();
     void handleEvent(const sf::Event& event);
 
-private:
+private:    
     void loadData();
-    void drawStats();
-
-    bool isInBounds(sf::Sprite &tile);
-
-    int drawOffset;
-
-    sf::View worldView;
-
-    sf::IntRect bounds;
-
-    std::vector<sf::Sprite> bgLayer;
-    std::vector<GameObject> collidablesLayer;
+    WorldData data;
 
     template<typename Object>
     void map2Layer(const std::vector<std::vector<int>> &source, std::vector<Object> &destination, int tileSize, int rowMax);
+    std::vector<sf::Sprite> bgLayer;
+    std::vector<GameObject> collidablesLayer;
+
+    sf::IntRect bounds;
+    bool isInBounds(sf::Sprite &tile);
+
+    sf::View worldView;
+    
+    int drawOffset;    
     void movePlayer();
 
-	State::Context context;
     u_short tileSize;
+    
+    sf::Text stats;
+    void drawStats();
 
+    State::Context context;
     TextureManager &textures;
     FontManager &fonts;
-
-    WorldData data;
-
-    sf::Text stats;
     Player player;
 };
 

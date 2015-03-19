@@ -3,12 +3,19 @@
 #include "States/TitleState.hpp"
 
 Application::Application()
-:window{{winWidth, winHeight}, "Tile Engine", sf::Style::Titlebar | sf::Style::Close | sf::Style::Resize},
-context{window, textures, fonts}, stateStack{context}
+:window{{winWidth, winHeight}, "Enter the Unknown", sf::Style::Titlebar | sf::Style::Close | sf::Style::Resize},
+
+//Here's where resource managers get initialized
+context{window, textures, fonts}, 
+
+stateStack{context}
 {
-    //window.setFramerateLimit(60);    
+    window.setFramerateLimit(60);    
     window.setVerticalSyncEnabled(true);
     registerStates();
+    
+    //Start a new state,
+    //Should be Title once it's done
     stateStack.push(StateID::Game);    
 }
 
