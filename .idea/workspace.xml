@@ -1,0 +1,507 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CMakeRunConfigurationManager" shouldGenerate="true" assignedExecutableTargets="true" buildAllGenerated="true">
+    <generated>
+      <config projectName="Enter_The_Unknown" targetName="Enter_The_Unknown" />
+      <config projectName="Enter_The_Unknown" targetName="header_files" />
+    </generated>
+  </component>
+  <component name="CMakeSettings" AUTO_RELOAD="true" GENERATION_PASS_SYSTEM_ENVIRONMENT="true">
+    <ADDITIONAL_GENERATION_ENVIRONMENT>
+      <envs />
+    </ADDITIONAL_GENERATION_ENVIRONMENT>
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="5c3142d3-7fc7-444f-ae68-338619a0da19" name="Default" comment="">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/TileMap.cpp" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data/enemies/basic.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data/floors/testfloor.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data/player/player.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data/player/player.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/font/font.ttf" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/img/5042954053_8f15f9b209.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/img/button.ase" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/img/button.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/img/levelTiles.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/img/player.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/img/player.png.bak" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/img/player.png.old" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/img/playerCombat.ase" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/img/playerCombat.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/img/titleBG.png" afterPath="" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bin/program.out" afterPath="$PROJECT_DIR$/bin/program.out" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Application.cpp" afterPath="$PROJECT_DIR$/src/Application.cpp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Enter-The-Unknown.sublime-project" afterPath="$PROJECT_DIR$/Enter-The-Unknown.sublime-project" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Entities/Entity.cpp" afterPath="$PROJECT_DIR$/src/Entities/Entity.cpp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/include/Entities/Entity.hpp" afterPath="$PROJECT_DIR$/include/Entities/Entity.hpp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Utils/EntityLoader.cpp" afterPath="$PROJECT_DIR$/src/Utils/EntityLoader.cpp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/include/Utils/EntityLoader.hpp" afterPath="$PROJECT_DIR$/include/Utils/EntityLoader.hpp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Utils/FloorLoader.cpp" afterPath="$PROJECT_DIR$/src/Utils/FloorLoader.cpp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/include/Utils/FloorLoader.hpp" afterPath="$PROJECT_DIR$/include/Utils/FloorLoader.hpp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/States/GameState.cpp" afterPath="$PROJECT_DIR$/src/States/GameState.cpp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/include/Resource/Resources.hpp" afterPath="$PROJECT_DIR$/include/Resource/Resources.hpp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/include/States/StateID.hpp" afterPath="$PROJECT_DIR$/include/States/StateID.hpp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/include/TileMap.hpp" afterPath="$PROJECT_DIR$/include/TileMap.hpp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/World.cpp" afterPath="$PROJECT_DIR$/src/World.cpp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/include/World.hpp" afterPath="$PROJECT_DIR$/include/World.hpp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/compile.sh" afterPath="$PROJECT_DIR$/compile.sh" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/main.cpp" afterPath="$PROJECT_DIR$/main.cpp" />
+    </list>
+    <ignored path="Enter-The-Unknown.iws" />
+    <ignored path=".idea/workspace.xml" />
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="TRACKING_ENABLED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ChangesViewManager" flattened_view="true" show_ignored="false" />
+  <component name="CreatePatchCommitExecutor">
+    <option name="PATCH_PATH" value="" />
+  </component>
+  <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
+  <component name="FavoritesManager">
+    <favorites_list name="Enter-The-Unknown" />
+  </component>
+  <component name="FileEditorManager">
+    <leaf>
+      <file leaf-file-name="TileMap.cpp" pinned="false" current-in-tab="false">
+        <entry file="file://$USER_HOME$/Dropbox/Workspace/Enter-The-Unknown/src/TileMap.cpp">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0">
+              <caret line="33" column="6" selection-start-line="33" selection-start-column="6" selection-end-line="33" selection-end-column="6" />
+              <folding>
+                <marker date="1426845856842" expanded="true" signature="1956:1960" placeholder="{...}" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="FloorEditor.cpp" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/Editor/FloorEditor.cpp">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.24107143">
+              <caret line="6" column="39" selection-start-line="6" selection-start-column="39" selection-end-line="6" selection-end-column="39" />
+              <folding>
+                <marker date="1426846470436" expanded="false" signature="9:82" placeholder="..." />
+                <marker date="1426846470436" expanded="true" signature="208:500" placeholder="{...}" />
+                <marker date="1426846470436" expanded="true" signature="532:859" placeholder="{...}" />
+                <marker date="1426846470436" expanded="true" signature="892:1281" placeholder="{...}" />
+                <marker date="1426846470436" expanded="true" signature="1325:1851" placeholder="{...}" />
+                <marker date="1426846470436" expanded="true" signature="1878:2007" placeholder="{...}" />
+                <marker date="1426846470436" expanded="true" signature="2063:2208" placeholder="{...}" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="FloorEditor.hpp" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/include/Editor/FloorEditor.hpp">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0">
+              <caret line="30" column="23" selection-start-line="30" selection-start-column="23" selection-end-line="30" selection-end-column="23" />
+              <folding>
+                <marker date="1426846378696" expanded="false" signature="61:188" placeholder="..." />
+                <marker date="1426846378696" expanded="true" signature="234:617" placeholder="{...}" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Application.cpp" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/Application.cpp">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0">
+              <caret line="13" column="1" selection-start-line="13" selection-start-column="1" selection-end-line="13" selection-end-column="1" />
+              <folding>
+                <marker date="1426846161082" expanded="true" signature="9:130" placeholder="..." />
+                <marker date="1426846161082" expanded="true" signature="378:589" placeholder="{...}" />
+                <marker date="1426846161082" expanded="true" signature="615:1057" placeholder="{...}" />
+                <marker date="1426846161082" expanded="true" signature="1092:1263" placeholder="{...}" />
+                <marker date="1426846161082" expanded="true" signature="1307:1341" placeholder="{...}" />
+                <marker date="1426846161082" expanded="true" signature="1370:1501" placeholder="{...}" />
+                <marker date="1426846161082" expanded="true" signature="1538:1720" placeholder="{...}" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="World.cpp" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/World.cpp">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0">
+              <caret line="49" column="1" selection-start-line="49" selection-start-column="1" selection-end-line="49" selection-end-column="1" />
+              <folding>
+                <marker date="1426844915622" expanded="true" signature="9:69" placeholder="..." />
+                <marker date="1426844915622" expanded="true" signature="201:484" placeholder="{...}" />
+                <marker date="1426844915622" expanded="true" signature="510:941" placeholder="{...}" />
+                <marker date="1426844915622" expanded="true" signature="968:1365" placeholder="{...}" />
+                <marker date="1426844915622" expanded="true" signature="1403:2038" placeholder="{...}" />
+                <marker date="1426844915622" expanded="true" signature="2059:2259" placeholder="{...}" />
+                <marker date="1426844915622" expanded="true" signature="2285:2415" placeholder="{...}" />
+                <marker date="1426844915622" expanded="true" signature="2465:2479" placeholder="{...}" />
+                <marker date="1426844915622" expanded="true" signature="2506:3160" placeholder="{...}" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/main.cpp" />
+        <option value="$PROJECT_DIR$/include/TileMap.hpp" />
+        <option value="$PROJECT_DIR$/CMakeLists.txt" />
+        <option value="$PROJECT_DIR$/src/TileMap.cpp" />
+        <option value="$PROJECT_DIR$/src/World.cpp" />
+        <option value="$PROJECT_DIR$/src/Application.cpp" />
+        <option value="$USER_HOME$/Dropbox/Workspace/Enter-The-Unknown/src/TileMap.cpp" />
+        <option value="$PROJECT_DIR$/include/Floor.hpp" />
+        <option value="$PROJECT_DIR$/include/Editor/FloorEditor.hpp" />
+        <option value="$PROJECT_DIR$/src/Editor/FloorEditor.cpp" />
+      </list>
+    </option>
+  </component>
+  <component name="NamedScopeManager">
+    <order />
+  </component>
+  <component name="ProjectFrameBounds">
+    <option name="x" value="1919" />
+    <option name="width" value="1368" />
+    <option name="height" value="769" />
+  </component>
+  <component name="ProjectLevelVcsManager" settingsEditedManually="false">
+    <OptionsSetting value="true" id="Add" />
+    <OptionsSetting value="true" id="Remove" />
+    <OptionsSetting value="true" id="Checkout" />
+    <OptionsSetting value="true" id="Update" />
+    <OptionsSetting value="true" id="Status" />
+    <OptionsSetting value="true" id="Edit" />
+    <ConfirmationsSetting value="0" id="Add" />
+    <ConfirmationsSetting value="0" id="Remove" />
+  </component>
+  <component name="ProjectView">
+    <navigator currentView="ProjectPane" proportions="" version="1">
+      <flattenPackages />
+      <showMembers />
+      <showModules />
+      <showLibraryContents />
+      <hideEmptyPackages />
+      <abbreviatePackageNames />
+      <autoscrollToSource />
+      <autoscrollFromSource />
+      <sortByType />
+    </navigator>
+    <panes>
+      <pane id="ProjectPane">
+        <subPane>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Enter-The-Unknown" />
+              <option name="myItemType" value="com.jetbrains.cidr.projectView.CidrFilesViewHelper$1$1" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Enter-The-Unknown" />
+              <option name="myItemType" value="com.jetbrains.cidr.projectView.CidrFilesViewHelper$1$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Enter-The-Unknown" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Enter-The-Unknown" />
+              <option name="myItemType" value="com.jetbrains.cidr.projectView.CidrFilesViewHelper$1$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Enter-The-Unknown" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Enter-The-Unknown" />
+              <option name="myItemType" value="com.jetbrains.cidr.projectView.CidrFilesViewHelper$1$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Enter-The-Unknown" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Editor" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Enter-The-Unknown" />
+              <option name="myItemType" value="com.jetbrains.cidr.projectView.CidrFilesViewHelper$1$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Enter-The-Unknown" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="include" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Enter-The-Unknown" />
+              <option name="myItemType" value="com.jetbrains.cidr.projectView.CidrFilesViewHelper$1$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Enter-The-Unknown" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="include" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Editor" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Enter-The-Unknown" />
+              <option name="myItemType" value="com.jetbrains.cidr.projectView.CidrFilesViewHelper$1$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Enter-The-Unknown" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="bin" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+        </subPane>
+      </pane>
+    </panes>
+  </component>
+  <component name="PropertiesComponent">
+    <property name="recentsLimit" value="5" />
+    <property name="restartRequiresConfirmation" value="true" />
+  </component>
+  <component name="RunManager" selected="Application.Build All">
+    <configuration default="true" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS="FALSE" PROJECT_NAME="Enter_The_Unknown" TARGET_NAME="Enter_The_Unknown" CONFIG_NAME="Debug">
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="false" name="Enter_The_Unknown" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS="FALSE" PROJECT_NAME="Enter_The_Unknown" TARGET_NAME="Enter_The_Unknown" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="Enter_The_Unknown" RUN_TARGET_NAME="Enter_The_Unknown">
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="false" name="header_files" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS="FALSE" PROJECT_NAME="Enter_The_Unknown" TARGET_NAME="header_files" CONFIG_NAME="Debug">
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="false" name="Build All" type="CMakeRunConfiguration" factoryName="Application" WORKING_DIR="file://$PROJECT_DIR$" PASS_PARENT_ENVS="FALSE" PROJECT_NAME="Enter_The_Unknown" TARGET_NAME="Enter_The_Unknown" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="Enter_The_Unknown" RUN_TARGET_NAME="Enter_The_Unknown">
+      <envs />
+      <method />
+    </configuration>
+    <list size="3">
+      <item index="0" class="java.lang.String" itemvalue="Application.Enter_The_Unknown" />
+      <item index="1" class="java.lang.String" itemvalue="Application.header_files" />
+      <item index="2" class="java.lang.String" itemvalue="Application.Build All" />
+    </list>
+  </component>
+  <component name="ShelveChangesManager" show_recycled="false" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="5c3142d3-7fc7-444f-ae68-338619a0da19" name="Default" comment="" />
+      <created>1426842064279</created>
+      <option name="number" value="Default" />
+      <updated>1426842064279</updated>
+    </task>
+    <servers />
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="1919" y="0" width="1368" height="769" extended-state="6" />
+    <editor active="false" />
+    <layout>
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.25549048" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.24408284" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="CMake" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3108108" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="true" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.6286982" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="true" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.39792898" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+    </layout>
+  </component>
+  <component name="VcsContentAnnotationSettings">
+    <option name="myLimit" value="2678400000" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="com.jetbrains.cidr.execution.debugger.OCBreakpointType">
+          <url>file://$PROJECT_DIR$/src/TileMap.cpp</url>
+          <line>31</line>
+        </line-breakpoint>
+      </breakpoints>
+      <option name="time" value="1" />
+    </breakpoint-manager>
+    <watches-manager>
+      <configuration name="CMakeRunConfiguration">
+        <watch expression="context" />
+        <watch expression="shape" />
+        <watch expression="j * tileSize" />
+        <watch expression=" i * tileSize -0.0075" />
+        <watch expression="quad" />
+      </configuration>
+    </watches-manager>
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/include/TileMap.hpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.61066234">
+          <caret line="29" column="6" selection-start-line="29" selection-start-column="6" selection-end-line="29" selection-end-column="6" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/main.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="26" selection-start-line="0" selection-start-column="26" selection-end-line="0" selection-end-column="26" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/CMakeLists.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.6847826">
+          <caret line="21" column="19" selection-start-line="21" selection-start-column="19" selection-end-line="21" selection-end-column="19" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/TileMap.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.4361874">
+          <caret line="23" column="19" selection-start-line="23" selection-start-column="16" selection-end-line="23" selection-end-column="20" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/World.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="49" column="1" selection-start-line="49" selection-start-column="1" selection-end-line="49" selection-end-column="1" />
+          <folding>
+            <marker date="1426844915622" expanded="true" signature="9:69" placeholder="..." />
+            <marker date="1426844915622" expanded="true" signature="201:484" placeholder="{...}" />
+            <marker date="1426844915622" expanded="true" signature="510:941" placeholder="{...}" />
+            <marker date="1426844915622" expanded="true" signature="968:1365" placeholder="{...}" />
+            <marker date="1426844915622" expanded="true" signature="1403:2038" placeholder="{...}" />
+            <marker date="1426844915622" expanded="true" signature="2059:2259" placeholder="{...}" />
+            <marker date="1426844915622" expanded="true" signature="2285:2415" placeholder="{...}" />
+            <marker date="1426844915622" expanded="true" signature="2465:2479" placeholder="{...}" />
+            <marker date="1426844915622" expanded="true" signature="2506:3160" placeholder="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/Dropbox/Workspace/Enter-The-Unknown/src/TileMap.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="33" column="6" selection-start-line="33" selection-start-column="6" selection-end-line="33" selection-end-column="6" />
+          <folding>
+            <marker date="1426845856842" expanded="true" signature="1956:1960" placeholder="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/include/Floor.hpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.63790447">
+          <caret line="47" column="4" selection-start-line="47" selection-start-column="4" selection-end-line="47" selection-end-column="4" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Floor.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/include/Editor/FloorEditor.hpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="30" column="23" selection-start-line="30" selection-start-column="23" selection-end-line="30" selection-end-column="23" />
+          <folding>
+            <marker date="1426846378696" expanded="false" signature="61:188" placeholder="..." />
+            <marker date="1426846378696" expanded="true" signature="234:617" placeholder="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Application.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="13" column="1" selection-start-line="13" selection-start-column="1" selection-end-line="13" selection-end-column="1" />
+          <folding>
+            <marker date="1426846161082" expanded="true" signature="9:130" placeholder="..." />
+            <marker date="1426846161082" expanded="true" signature="378:589" placeholder="{...}" />
+            <marker date="1426846161082" expanded="true" signature="615:1057" placeholder="{...}" />
+            <marker date="1426846161082" expanded="true" signature="1092:1263" placeholder="{...}" />
+            <marker date="1426846161082" expanded="true" signature="1307:1341" placeholder="{...}" />
+            <marker date="1426846161082" expanded="true" signature="1370:1501" placeholder="{...}" />
+            <marker date="1426846161082" expanded="true" signature="1538:1720" placeholder="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Editor/FloorEditor.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.24107143">
+          <caret line="6" column="39" selection-start-line="6" selection-start-column="39" selection-end-line="6" selection-end-column="39" />
+          <folding>
+            <marker date="1426846470436" expanded="false" signature="9:82" placeholder="..." />
+            <marker date="1426846470436" expanded="true" signature="208:500" placeholder="{...}" />
+            <marker date="1426846470436" expanded="true" signature="532:859" placeholder="{...}" />
+            <marker date="1426846470436" expanded="true" signature="892:1281" placeholder="{...}" />
+            <marker date="1426846470436" expanded="true" signature="1325:1851" placeholder="{...}" />
+            <marker date="1426846470436" expanded="true" signature="1878:2007" placeholder="{...}" />
+            <marker date="1426846470436" expanded="true" signature="2063:2208" placeholder="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+  </component>
+</project>

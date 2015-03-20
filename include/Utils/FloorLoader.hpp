@@ -16,7 +16,8 @@ public:
     u_short getTileSize() ;
 
     sf::Vector2i getFloorSize() ;
-    sf::Vector2i getSpawnPosition() ;
+    sf::Vector2i getSpawnPosition();
+    sf::Vector2i getExitPosition();
 private:
     void json2WorldMap(const std::string &field, std::vector<std::vector<short>> &destination);
 };

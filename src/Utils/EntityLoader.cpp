@@ -6,11 +6,11 @@ EntityLoader::EntityLoader(const std::string &filename)
 :JsonParser{filename}, jFrames{false}
 {}
 
-u_short EntityLoader::getDamage()
-{return getNumber("damage");}
-
 u_short EntityLoader::getLives()
 {return getNumber("lives");}
+
+u_short EntityLoader::getPower()
+{return getNumber("damage");}
 
 float EntityLoader::getSpeed()
 {return getNumber("speed");}

@@ -58,6 +58,11 @@ void Entity::checkCollisions(GameObject &obj, uint range)
     }
 }
 
+bool Entity::collides(GameObject &obj)
+{
+    return top() <= obj.bottom() && bottom() >= obj.top() && left() <= obj.right() && right() >= obj.left();
+}
+
 void Entity::checkCollisions(sf::IntRect bounds)
 {
     float actualSpeed = getSpeed();

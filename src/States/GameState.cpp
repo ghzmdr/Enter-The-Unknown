@@ -3,7 +3,7 @@
 
 GameState::GameState(StateStack& stack, Context context):
 State(stack, context), 
-world{getContext(), "./data/floors/testfloor.json"}
+world{getContext(), "data/floors/testfloor/testfloor.json"}
 {
     log_info("INIT GAME STATE");
 }

@@ -1,8 +1,13 @@
 {
-    "damage": 1,
+    "power": 1,
     "lives": 4,
     "speed": 0.8,
-    "script": "basic.lua",
+    "weapon": "data/weapons/axe/axe.json",
+    
+    "hitbox": {
+        "shape": "rect",
+        "size" : {"X": 14, "Y": 30}
+    },
     
     "size": {"W": 16, "H": 32},
     "sheet": "enemysheet.png",
@@ -10,5 +15,7 @@
         "movement": [0,1,2],
         "attack":   [3,4,5],
         "death":    [6,7,8]
-    }
+    },
+    
+    "script": "basic.lua",
 }

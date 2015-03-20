@@ -33,6 +33,7 @@ public:
 
     void checkCollisions(GameObject &obj, uint range);
     void checkCollisions(sf::IntRect bounds);
+    bool collides(GameObject &obj);
 
     void setWalkingAnimFrames(std::vector<u_short> frames);
     void setAttackingAnimFrames(std::vector<u_short> frames);

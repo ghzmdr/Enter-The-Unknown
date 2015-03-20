@@ -1,0 +1,7 @@
+{
+    "damage": 2,
+    "range" : 1,
+    "bullets": false,
+    "sheet": "data/weapons/melee/axe/axe.png",
+    "animation" : [0,1,2,3]
+}

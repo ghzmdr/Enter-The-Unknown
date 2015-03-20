@@ -11,8 +11,9 @@ class EntityLoader : private JsonParser
 public:
     EntityLoader(const std::string &filename);
 
-    u_short getDamage();
     u_short getLives();
+    u_short getPower();
+    
     float getSpeed();
     
     sf::Vector2i getSize();

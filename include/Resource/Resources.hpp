@@ -11,16 +11,15 @@ namespace sf
 
 namespace Textures
 {
-    ID TitleBackground  = "img/titleBG.png";
-    ID Button           = "img/button.png";
-    ID Player           = "img/playerCombat.png";
-    ID WorldTiles       = "img/levelTiles.png";
+    ID TitleBackground  = "res/img/titleBG.png";
+    ID Button           = "res/img/button.png";
+    ID WorldTiles       = "res/img/levelTiles.png";
 }
 
 
 namespace Fonts
 {
-    ID Main  = "font/font.ttf";
+    ID Main  = "res/font/font.ttf";
 }
 
 template<typename Resource>

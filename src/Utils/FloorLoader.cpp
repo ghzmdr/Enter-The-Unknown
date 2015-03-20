@@ -43,6 +43,9 @@ sf::Vector2i FloorLoader::getFloorSize()
 sf::Vector2i FloorLoader::getSpawnPosition() 
 {return getVector("spawn");}
 
+sf::Vector2i FloorLoader::getExitPosition()
+{return getVector("exit");}
+
 void FloorLoader::json2WorldMap(const std::string &field, std::vector<std::vector<short>> &destination)
 {
     Json::Value jsonMap = root.get(field, false);

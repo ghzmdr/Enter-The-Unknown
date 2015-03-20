@@ -1,7 +1,8 @@
 {
     "tilesize" : 16,
-    "tilesheet" : "./img/levelTiles.png",
-    "spawn": {"X": 100, "Y": 100},
+    "tilesheet" : "res/img/floors/ground.png",
+    "spawn": {"X": 760, "Y": 15},
+    "exit": {"X": -6, "Y": 320},
 
 
     "map" : [

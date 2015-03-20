@@ -1,0 +1,9 @@
+{
+    "sheet": "data/pickups/life/life.png",
+    "animation": [0],
+    "effects": {
+        "speed": 0,
+        "power": 0,
+        "life": 2
+    }
+}

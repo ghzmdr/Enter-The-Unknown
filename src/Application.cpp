@@ -1,6 +1,7 @@
 #include "Application.hpp"
 #include "States/GameState.hpp"
 #include "States/TitleState.hpp"
+#include "States/FloorEditorState.hpp"
 
 Application::Application()
 :window{{winWidth, winHeight}, "Enter the Unknown", sf::Style::Titlebar | sf::Style::Close | sf::Style::Resize},
@@ -16,7 +17,7 @@ stateStack{context}
     
     //Start a new state,
     //Should be Title once it's done
-    stateStack.push(StateID::Game);    
+    stateStack.push(StateID::Editor);
 }
 
 void Application::run()
@@ -71,5 +72,6 @@ void Application::registerStates()
 {
     stateStack.registerState<TitleState>(StateID::Title);
     stateStack.registerState<GameState>(StateID::Game);
+    stateStack.registerState<FloorEditorState>(StateID::Editor);
 }
 

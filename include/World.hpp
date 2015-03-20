@@ -1,15 +1,12 @@
 #ifndef LEVEL_H
 #define LEVEL_H
 
-#include <SFML/System/NonCopyable.hpp>
-#include <SFML/Graphics/View.hpp>
-#include <SFML/Graphics/RenderWindow.hpp>
 #include <SFML/Graphics.hpp>
 
 #include "States/State.hpp"
-#include "Player.hpp"
 
-#include "TileMap.hpp"
+#include "Player.hpp"
+#include "Floor.hpp"
 
 #include "Utils/EntityLoader.hpp"
 #include "Utils/FloorLoader.hpp"
@@ -26,34 +23,24 @@ public:
     void handleEvent(const sf::Event& event);
 
 private:    
-    void loadData();
+    void loadFloor();
+    void loadPlayer();
 
     template<typename Object>
-    void map2Layer(const std::vector<std::vector<short>> &source, std::vector<Object> &destination, int tileSize, int rowMax);
-    std::vector<sf::Sprite> bgLayer;
-    std::vector<GameObject> collidablesLayer;
+    void map2Layer(const std::vector<std::vector<short>> &source, std::vector<Object> &destination, int tileSize, int rowMax);    
 
-    sf::IntRect bounds;
-    bool isInBounds(sf::Sprite &tile);
-
-    sf::View worldView;
-    
-    int drawOffset;    
     void movePlayer();
 
-    u_short tileSize;
-    
     sf::Text stats;
     void drawStats();
 
-    FloorLoader floorData;
-
-    TileMap tileMap;
-
     State::Context context;
     TextureManager &textures;
-    FontManager &fonts;
-    Player player;
+    FontManager &fonts;    
+
+    Player player;    
+    Floor currentFloor;
+    sf::View worldView;
 };
 
 #endif
