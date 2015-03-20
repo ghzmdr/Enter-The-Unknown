@@ -24,7 +24,7 @@ void Entity::checkCollisions(GameObject &obj, uint range)
 
     if (isObjectInRange(obj, range))
     {               
-        if (!(right() < obj.left()) && !(left() > obj.right()))
+        if (right() >= obj.left() && left() <= obj.right())
         {
             if (top() < obj.top() && bottom() + actualSpeed > obj.top()) 
             {
@@ -40,7 +40,7 @@ void Entity::checkCollisions(GameObject &obj, uint range)
             }
         }
 
-        if (!(bottom() < obj.top()) && !(top() > obj.bottom()))
+        if (bottom() >= obj.top() && top() <= obj.bottom())
         {
             if (left() < obj.left() && (right() + actualSpeed > obj.left())) 
             {
@@ -63,18 +63,18 @@ bool Entity::collides(GameObject &obj)
     return top() <= obj.bottom() && bottom() >= obj.top() && left() <= obj.right() && right() >= obj.left();
 }
 
-void Entity::checkCollisions(sf::IntRect bounds)
+void Entity::checkCollisions(sf::IntRect bounds, u_short tileSize)
 {
     float actualSpeed = getSpeed();
 
-    if (left() - actualSpeed <= bounds.left)        
-        {running && left() - speed > bounds.left ? canRun = false : canGoLeft = false;}
-    if (right() + actualSpeed >= bounds.width)
-      {running && right() + speed < bounds.width ? canRun = false : canGoRight = false;}
-    if (top() - actualSpeed <= bounds.top)
-        {running && top() - speed > bounds.top ? canRun = false : canGoUp = false;}
-    if (bottom() + actualSpeed >= bounds.height)
-        {running && bottom() + speed < bounds.height ? canRun = false : canGoDown = false;}                                        
+    if (left() - actualSpeed -tileSize/4<= bounds.left)
+        {running && left() - speed -tileSize/4> bounds.left ? canRun = false : canGoLeft = false;}
+    if (right() + actualSpeed +tileSize/4>= bounds.width )
+      {running && right() + speed +tileSize/4< bounds.width ? canRun = false : canGoRight = false;}
+    if (top() - actualSpeed -tileSize/4<= bounds.top )
+        {running && top() - speed -tileSize/4> bounds.top ? canRun = false : canGoUp = false;}
+    if (bottom() + actualSpeed +tileSize/4>= bounds.height )
+        {running && bottom() + speed +tileSize/4< bounds.height ? canRun = false : canGoDown = false;}
 }
 
 float Entity::getSpeed()

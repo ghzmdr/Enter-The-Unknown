@@ -18,28 +18,29 @@ class World : private sf::NonCopyable
 public:
 	explicit World(State::Context context, const std::string &floorFileName);
 
-	void update(sf::Time deltaT);
-	void draw();
+    void update(sf::Time deltaT);
+    void draw();
     void handleEvent(const sf::Event& event);
 
-private:    
+private:
     void loadFloor();
     void loadPlayer();
+    bool drawStatsFlag;
 
     template<typename Object>
-    void map2Layer(const std::vector<std::vector<short>> &source, std::vector<Object> &destination, int tileSize, int rowMax);    
+    void map2Layer(const std::vector<std::vector<short>> &source, std::vector<Object> &destination, int tileSize, int rowMax);
 
     void movePlayer();
-
     sf::Text stats;
-    void drawStats();
 
+    void drawStats();
     State::Context context;
     TextureManager &textures;
-    FontManager &fonts;    
 
-    Player player;    
+    FontManager &fonts;
+    Player player;
     Floor currentFloor;
+
     sf::View worldView;
 };
 

@@ -17,7 +17,7 @@ stateStack{context}
     
     //Start a new state,
     //Should be Title once it's done
-    stateStack.push(StateID::Editor);
+    stateStack.push(StateID::Game);
 }
 
 void Application::run()

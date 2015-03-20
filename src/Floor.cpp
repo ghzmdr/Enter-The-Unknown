@@ -7,7 +7,7 @@ void Floor::loadTileMap(MapData map)
 }
 
 void Floor::setTileSheet(sf::Texture &ts)
-{tileSheet = ts; tileSheet.setSmooth(false);}
+{tileSheet = ts; tileSheet.setSmooth(false); tileSheet.setRepeated(false);}
 
 void Floor::loadCollidables(MapData map)
 {
@@ -54,10 +54,8 @@ const bool Floor::isInBounds(const sf::Vector2f &tilePosition) const
     //TILE BOTTOM Y < WORLD BOTTOM Y (WORLD CENTER Y + HALF WORLD HEIGHT)
     bool inBottom = tilePosition.y <= viewBounds.top + (viewBounds.height/2 + drawOffset * tileSize);
 
-    if (inLeft && inRight && inTop && inBottom) 
-        return true;
+    return inLeft && inRight && inTop && inBottom;
 
-    return false;
 }
 
 template<typename Object>
@@ -67,7 +65,10 @@ void Floor::map2Layer(const MapData &source, std::vector<Object> &destination)
         for (int j = 0; j < source[i].size(); j++)
             if (source[i][j] >= 0)
             {
-                sf::Vector2i tilePosition = {source[i][j] * tileSize, (source[i][j] * tileSize) % ((int)tileSheet.getSize().x / tileSize)};
+                int tileID = source[i][j];
+                int tileSheetWidth = tileSheet.getSize().x/tileSize;
+
+                sf::Vector2i tilePosition = {(tileID % tileSheetWidth) * tileSize, (tileID / tileSheetWidth) *tileSize};
                 Object tile{tileSheet, {tilePosition, {tileSize, tileSize}}};
                 tile.setPosition(j * tileSize , i * tileSize);                
                 destination.push_back(tile);

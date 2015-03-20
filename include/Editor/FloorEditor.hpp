@@ -20,6 +20,8 @@ public:
     void handleEvent(const sf::Event& event);
 private:
 
+    void addTileAt(sf::Vector2i position);
+
     void loadFloor();
     void loadPlayer();
 

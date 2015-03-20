@@ -13,39 +13,19 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="5c3142d3-7fc7-444f-ae68-338619a0da19" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/TileMap.cpp" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/data/enemies/basic.json" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/data/floors/testfloor.json" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/data/player/player.json" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/data/player/player.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/font/font.ttf" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/img/5042954053_8f15f9b209.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/img/button.ase" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/img/button.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/img/levelTiles.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/img/player.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/img/player.png.bak" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/img/player.png.old" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/img/playerCombat.ase" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/img/playerCombat.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/img/titleBG.png" afterPath="" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/res/img/floors/ground.png" afterPath="$PROJECT_DIR$/res/img/floors/ground.png" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bin/program.out" afterPath="$PROJECT_DIR$/bin/program.out" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Application.cpp" afterPath="$PROJECT_DIR$/src/Application.cpp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Enter-The-Unknown.sublime-project" afterPath="$PROJECT_DIR$/Enter-The-Unknown.sublime-project" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Entities/Entity.cpp" afterPath="$PROJECT_DIR$/src/Entities/Entity.cpp" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/include/Entities/Entity.hpp" afterPath="$PROJECT_DIR$/include/Entities/Entity.hpp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Utils/EntityLoader.cpp" afterPath="$PROJECT_DIR$/src/Utils/EntityLoader.cpp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/include/Utils/EntityLoader.hpp" afterPath="$PROJECT_DIR$/include/Utils/EntityLoader.hpp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Utils/FloorLoader.cpp" afterPath="$PROJECT_DIR$/src/Utils/FloorLoader.cpp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/include/Utils/FloorLoader.hpp" afterPath="$PROJECT_DIR$/include/Utils/FloorLoader.hpp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/States/GameState.cpp" afterPath="$PROJECT_DIR$/src/States/GameState.cpp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/include/Resource/Resources.hpp" afterPath="$PROJECT_DIR$/include/Resource/Resources.hpp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/include/States/StateID.hpp" afterPath="$PROJECT_DIR$/include/States/StateID.hpp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/include/TileMap.hpp" afterPath="$PROJECT_DIR$/include/TileMap.hpp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Floor.cpp" afterPath="$PROJECT_DIR$/src/Floor.cpp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Editor/FloorEditor.cpp" afterPath="$PROJECT_DIR$/src/Editor/FloorEditor.cpp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/include/Editor/FloorEditor.hpp" afterPath="$PROJECT_DIR$/include/Editor/FloorEditor.hpp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/TileMap.cpp" afterPath="$PROJECT_DIR$/src/TileMap.cpp" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/World.cpp" afterPath="$PROJECT_DIR$/src/World.cpp" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/include/World.hpp" afterPath="$PROJECT_DIR$/include/World.hpp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/compile.sh" afterPath="$PROJECT_DIR$/compile.sh" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/main.cpp" afterPath="$PROJECT_DIR$/main.cpp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/floors/testfloor/testfloor.json" afterPath="$PROJECT_DIR$/data/floors/testfloor/testfloor.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="Enter-The-Unknown.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -65,89 +45,7 @@
     <favorites_list name="Enter-The-Unknown" />
   </component>
   <component name="FileEditorManager">
-    <leaf>
-      <file leaf-file-name="TileMap.cpp" pinned="false" current-in-tab="false">
-        <entry file="file://$USER_HOME$/Dropbox/Workspace/Enter-The-Unknown/src/TileMap.cpp">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="33" column="6" selection-start-line="33" selection-start-column="6" selection-end-line="33" selection-end-column="6" />
-              <folding>
-                <marker date="1426845856842" expanded="true" signature="1956:1960" placeholder="{...}" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="FloorEditor.cpp" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/Editor/FloorEditor.cpp">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.24107143">
-              <caret line="6" column="39" selection-start-line="6" selection-start-column="39" selection-end-line="6" selection-end-column="39" />
-              <folding>
-                <marker date="1426846470436" expanded="false" signature="9:82" placeholder="..." />
-                <marker date="1426846470436" expanded="true" signature="208:500" placeholder="{...}" />
-                <marker date="1426846470436" expanded="true" signature="532:859" placeholder="{...}" />
-                <marker date="1426846470436" expanded="true" signature="892:1281" placeholder="{...}" />
-                <marker date="1426846470436" expanded="true" signature="1325:1851" placeholder="{...}" />
-                <marker date="1426846470436" expanded="true" signature="1878:2007" placeholder="{...}" />
-                <marker date="1426846470436" expanded="true" signature="2063:2208" placeholder="{...}" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="FloorEditor.hpp" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/include/Editor/FloorEditor.hpp">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="30" column="23" selection-start-line="30" selection-start-column="23" selection-end-line="30" selection-end-column="23" />
-              <folding>
-                <marker date="1426846378696" expanded="false" signature="61:188" placeholder="..." />
-                <marker date="1426846378696" expanded="true" signature="234:617" placeholder="{...}" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Application.cpp" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/Application.cpp">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="13" column="1" selection-start-line="13" selection-start-column="1" selection-end-line="13" selection-end-column="1" />
-              <folding>
-                <marker date="1426846161082" expanded="true" signature="9:130" placeholder="..." />
-                <marker date="1426846161082" expanded="true" signature="378:589" placeholder="{...}" />
-                <marker date="1426846161082" expanded="true" signature="615:1057" placeholder="{...}" />
-                <marker date="1426846161082" expanded="true" signature="1092:1263" placeholder="{...}" />
-                <marker date="1426846161082" expanded="true" signature="1307:1341" placeholder="{...}" />
-                <marker date="1426846161082" expanded="true" signature="1370:1501" placeholder="{...}" />
-                <marker date="1426846161082" expanded="true" signature="1538:1720" placeholder="{...}" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="World.cpp" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/World.cpp">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="49" column="1" selection-start-line="49" selection-start-column="1" selection-end-line="49" selection-end-column="1" />
-              <folding>
-                <marker date="1426844915622" expanded="true" signature="9:69" placeholder="..." />
-                <marker date="1426844915622" expanded="true" signature="201:484" placeholder="{...}" />
-                <marker date="1426844915622" expanded="true" signature="510:941" placeholder="{...}" />
-                <marker date="1426844915622" expanded="true" signature="968:1365" placeholder="{...}" />
-                <marker date="1426844915622" expanded="true" signature="1403:2038" placeholder="{...}" />
-                <marker date="1426844915622" expanded="true" signature="2059:2259" placeholder="{...}" />
-                <marker date="1426844915622" expanded="true" signature="2285:2415" placeholder="{...}" />
-                <marker date="1426844915622" expanded="true" signature="2465:2479" placeholder="{...}" />
-                <marker date="1426844915622" expanded="true" signature="2506:3160" placeholder="{...}" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-    </leaf>
+    <leaf />
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -159,12 +57,17 @@
         <option value="$PROJECT_DIR$/include/TileMap.hpp" />
         <option value="$PROJECT_DIR$/CMakeLists.txt" />
         <option value="$PROJECT_DIR$/src/TileMap.cpp" />
-        <option value="$PROJECT_DIR$/src/World.cpp" />
         <option value="$PROJECT_DIR$/src/Application.cpp" />
         <option value="$USER_HOME$/Dropbox/Workspace/Enter-The-Unknown/src/TileMap.cpp" />
         <option value="$PROJECT_DIR$/include/Floor.hpp" />
-        <option value="$PROJECT_DIR$/include/Editor/FloorEditor.hpp" />
         <option value="$PROJECT_DIR$/src/Editor/FloorEditor.cpp" />
+        <option value="$PROJECT_DIR$/include/Editor/FloorEditor.hpp" />
+        <option value="$USER_HOME$/Dropbox/Workspace/Enter-The-Unknown/src/Editor/FloorEditor.cpp" />
+        <option value="$PROJECT_DIR$/src/Entities/Entity.cpp" />
+        <option value="$PROJECT_DIR$/include/World.hpp" />
+        <option value="$PROJECT_DIR$/src/World.cpp" />
+        <option value="$USER_HOME$/Dropbox/Workspace/Enter-The-Unknown/src/Floor.cpp" />
+        <option value="$PROJECT_DIR$/src/Floor.cpp" />
       </list>
     </option>
   </component>
@@ -172,9 +75,9 @@
     <order />
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="1919" />
-    <option name="width" value="1368" />
-    <option name="height" value="769" />
+    <option name="y" value="25" />
+    <option name="width" value="1920" />
+    <option name="height" value="1055" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="false">
     <OptionsSetting value="true" id="Add" />
@@ -228,6 +131,24 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Enter-The-Unknown" />
+              <option name="myItemType" value="com.jetbrains.cidr.projectView.CidrFilesViewHelper$1$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Enter-The-Unknown" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Entities" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -302,6 +223,7 @@
   <component name="PropertiesComponent">
     <property name="recentsLimit" value="5" />
     <property name="restartRequiresConfirmation" value="true" />
+    <property name="FullScreen" value="false" />
   </component>
   <component name="RunManager" selected="Application.Build All">
     <configuration default="true" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS="FALSE" PROJECT_NAME="Enter_The_Unknown" TARGET_NAME="Enter_The_Unknown" CONFIG_NAME="Debug">
@@ -337,28 +259,36 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="1919" y="0" width="1368" height="769" extended-state="6" />
+    <frame x="0" y="25" width="1920" height="1055" extended-state="6" />
     <editor active="false" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.25549048" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.18378094" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.24408284" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="CMake" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3108108" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="true" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.6286982" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="true" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.39792898" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.49815693" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="CMake" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3108108" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.27872342" sideWeight="0.50394946" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.62765956" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.24960506" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.27872342" sideWeight="0.49605057" order="3" side_tool="false" content_ui="tabs" x="369" y="538" width="946" height="262" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
     </layout>
+  </component>
+  <component name="Vcs.Log.UiProperties">
+    <option name="RECENTLY_FILTERED_USER_GROUPS">
+      <collection />
+    </option>
+    <option name="RECENTLY_FILTERED_BRANCH_GROUPS">
+      <collection />
+    </option>
   </component>
   <component name="VcsContentAnnotationSettings">
     <option name="myLimit" value="2678400000" />
@@ -367,28 +297,97 @@
     <breakpoint-manager>
       <breakpoints>
         <line-breakpoint enabled="true" type="com.jetbrains.cidr.execution.debugger.OCBreakpointType">
-          <url>file://$PROJECT_DIR$/src/TileMap.cpp</url>
-          <line>31</line>
+          <url>file://$USER_HOME$/Dropbox/Workspace/Enter-The-Unknown/src/Floor.cpp</url>
+          <line>71</line>
+          <option name="timeStamp" value="14" />
         </line-breakpoint>
       </breakpoints>
-      <option name="time" value="1" />
+      <breakpoints-dialog>
+        <breakpoints-dialog />
+      </breakpoints-dialog>
+      <option name="time" value="15" />
     </breakpoint-manager>
     <watches-manager>
       <configuration name="CMakeRunConfiguration">
-        <watch expression="context" />
-        <watch expression="shape" />
-        <watch expression="j * tileSize" />
-        <watch expression=" i * tileSize -0.0075" />
-        <watch expression="quad" />
+        <watch expression="id" />
+        <watch expression="tilePosition" />
+        <watch expression="tileNum" />
+        <watch expression="tileSheetWidth" />
       </configuration>
     </watches-manager>
   </component>
   <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/src/Editor/FloorEditor.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="69" column="1" selection-start-line="69" selection-start-column="1" selection-end-line="69" selection-end-column="1" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/Dropbox/Workspace/Enter-The-Unknown/src/Editor/FloorEditor.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/include/Editor/FloorEditor.hpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="22" column="31" selection-start-line="22" selection-start-column="31" selection-end-line="22" selection-end-column="31" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Editor/FloorEditor.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="78" column="46" selection-start-line="78" selection-start-column="41" selection-end-line="78" selection-end-column="49" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/Dropbox/Workspace/Enter-The-Unknown/src/TileMap.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/include/Editor/FloorEditor.hpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="33" column="18" selection-start-line="33" selection-start-column="18" selection-end-line="33" selection-end-column="18" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Application.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="13" column="1" selection-start-line="13" selection-start-column="1" selection-end-line="13" selection-end-column="1" />
+          <folding>
+            <element signature="e#0#26#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/World.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="49" column="1" selection-start-line="49" selection-start-column="1" selection-end-line="49" selection-end-column="1" />
+          <folding>
+            <element signature="e#0#20#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/include/TileMap.hpp">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.61066234">
           <caret line="29" column="6" selection-start-line="29" selection-start-column="6" selection-end-line="29" selection-end-column="6" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -396,7 +395,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="0" column="26" selection-start-line="0" selection-start-column="26" selection-end-line="0" selection-end-column="26" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -408,98 +406,110 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/TileMap.cpp">
+    <entry file="file://$PROJECT_DIR$/include/Floor.hpp">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.4361874">
-          <caret line="23" column="19" selection-start-line="23" selection-start-column="16" selection-end-line="23" selection-end-column="20" />
-          <folding />
+        <state vertical-scroll-proportion="0.63790447">
+          <caret line="47" column="4" selection-start-line="47" selection-start-column="4" selection-end-line="47" selection-end-column="4" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/World.cpp">
+    <entry file="file://$USER_HOME$/Dropbox/Workspace/Enter-The-Unknown/src/States/FloorEditorState.cpp">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="49" column="1" selection-start-line="49" selection-start-column="1" selection-end-line="49" selection-end-column="1" />
-          <folding>
-            <marker date="1426844915622" expanded="true" signature="9:69" placeholder="..." />
-            <marker date="1426844915622" expanded="true" signature="201:484" placeholder="{...}" />
-            <marker date="1426844915622" expanded="true" signature="510:941" placeholder="{...}" />
-            <marker date="1426844915622" expanded="true" signature="968:1365" placeholder="{...}" />
-            <marker date="1426844915622" expanded="true" signature="1403:2038" placeholder="{...}" />
-            <marker date="1426844915622" expanded="true" signature="2059:2259" placeholder="{...}" />
-            <marker date="1426844915622" expanded="true" signature="2285:2415" placeholder="{...}" />
-            <marker date="1426844915622" expanded="true" signature="2465:2479" placeholder="{...}" />
-            <marker date="1426844915622" expanded="true" signature="2506:3160" placeholder="{...}" />
-          </folding>
+        <state vertical-scroll-proportion="0.11059908">
+          <caret line="5" column="0" selection-start-line="5" selection-start-column="0" selection-end-line="5" selection-end-column="0" />
         </state>
       </provider>
     </entry>
     <entry file="file://$USER_HOME$/Dropbox/Workspace/Enter-The-Unknown/src/TileMap.cpp">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
-          <caret line="33" column="6" selection-start-line="33" selection-start-column="6" selection-end-line="33" selection-end-column="6" />
-          <folding>
-            <marker date="1426845856842" expanded="true" signature="1956:1960" placeholder="{...}" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/include/Floor.hpp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.63790447">
-          <caret line="47" column="4" selection-start-line="47" selection-start-column="4" selection-end-line="47" selection-end-column="4" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Floor.cpp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
+          <caret line="32" column="0" selection-start-line="32" selection-start-column="0" selection-end-line="32" selection-end-column="0" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/include/Editor/FloorEditor.hpp">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
-          <caret line="30" column="23" selection-start-line="30" selection-start-column="23" selection-end-line="30" selection-end-column="23" />
+          <caret line="22" column="31" selection-start-line="22" selection-start-column="31" selection-end-line="22" selection-end-column="31" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/Dropbox/Workspace/Enter-The-Unknown/src/Editor/FloorEditor.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="2.4427245">
+          <caret line="81" column="0" selection-start-line="81" selection-start-column="0" selection-end-line="81" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Editor/FloorEditor.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.055727553">
+          <caret line="69" column="1" selection-start-line="69" selection-start-column="1" selection-end-line="69" selection-end-column="1" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Entities/Entity.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-1.1075269">
+          <caret line="70" column="70" selection-start-line="70" selection-start-column="70" selection-end-line="70" selection-end-column="70" />
           <folding>
-            <marker date="1426846378696" expanded="false" signature="61:188" placeholder="..." />
-            <marker date="1426846378696" expanded="true" signature="234:617" placeholder="{...}" />
+            <element signature="e#0#30#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/World.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-1.003096">
+          <caret line="24" column="74" selection-start-line="24" selection-start-column="74" selection-end-line="24" selection-end-column="74" />
+          <folding>
+            <element signature="e#0#20#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/TileMap.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="23" column="19" selection-start-line="23" selection-start-column="16" selection-end-line="23" selection-end-column="20" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/Dropbox/Workspace/Enter-The-Unknown/src/Floor.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.43034056">
+          <caret line="69" column="89" selection-start-line="69" selection-start-column="81" selection-end-line="69" selection-end-column="89" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Floor.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="1.7678019">
+          <caret line="70" column="118" selection-start-line="70" selection-start-column="118" selection-end-line="70" selection-end-column="118" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/include/World.hpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.89164084">
+          <caret line="26" column="21" selection-start-line="26" selection-start-column="21" selection-end-line="26" selection-end-column="21" />
+          <folding>
+            <element signature="e#552#569#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Application.cpp">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
+        <state vertical-scroll-proportion="0.019715225">
           <caret line="13" column="1" selection-start-line="13" selection-start-column="1" selection-end-line="13" selection-end-column="1" />
-          <folding>
-            <marker date="1426846161082" expanded="true" signature="9:130" placeholder="..." />
-            <marker date="1426846161082" expanded="true" signature="378:589" placeholder="{...}" />
-            <marker date="1426846161082" expanded="true" signature="615:1057" placeholder="{...}" />
-            <marker date="1426846161082" expanded="true" signature="1092:1263" placeholder="{...}" />
-            <marker date="1426846161082" expanded="true" signature="1307:1341" placeholder="{...}" />
-            <marker date="1426846161082" expanded="true" signature="1370:1501" placeholder="{...}" />
-            <marker date="1426846161082" expanded="true" signature="1538:1720" placeholder="{...}" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Editor/FloorEditor.cpp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.24107143">
-          <caret line="6" column="39" selection-start-line="6" selection-start-column="39" selection-end-line="6" selection-end-column="39" />
-          <folding>
-            <marker date="1426846470436" expanded="false" signature="9:82" placeholder="..." />
-            <marker date="1426846470436" expanded="true" signature="208:500" placeholder="{...}" />
-            <marker date="1426846470436" expanded="true" signature="532:859" placeholder="{...}" />
-            <marker date="1426846470436" expanded="true" signature="892:1281" placeholder="{...}" />
-            <marker date="1426846470436" expanded="true" signature="1325:1851" placeholder="{...}" />
-            <marker date="1426846470436" expanded="true" signature="1878:2007" placeholder="{...}" />
-            <marker date="1426846470436" expanded="true" signature="2063:2208" placeholder="{...}" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>

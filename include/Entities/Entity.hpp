@@ -32,7 +32,7 @@ public:
     void walk(Direction dir);
 
     void checkCollisions(GameObject &obj, uint range);
-    void checkCollisions(sf::IntRect bounds);
+    void checkCollisions(sf::IntRect bounds, u_short tileSize);
     bool collides(GameObject &obj);
 
     void setWalkingAnimFrames(std::vector<u_short> frames);

@@ -20,10 +20,10 @@ void TileMap::load(sf::Texture &texture, std::vector<std::vector<short>> &tiles,
 
                 sf::Vertex *quad = &vertices[(i + j * tiles.size()) * 4];
 
-                quad[0].position = sf::Vector2f(j * tileSize, i * tileSize);
-                quad[1].position = sf::Vector2f((j+1) * tileSize, i * tileSize);
-                quad[2].position = sf::Vector2f((j+1) * tileSize, (i+1) * tileSize);
-                quad[3].position = sf::Vector2f(j * tileSize, (i + 1) * tileSize);
+                quad[0].position = sf::Vector2f(j * tileSize, (i * tileSize)-0.0075f);
+                quad[1].position = sf::Vector2f((j+1) * tileSize, (i * tileSize)-0.0075f);
+                quad[2].position = sf::Vector2f((j+1) * tileSize, ((i+1) * tileSize)-0.0075f);
+                quad[3].position = sf::Vector2f(j * tileSize, ((i + 1) * tileSize)-0.0075f);
 
                 quad[0].texCoords = sf::Vector2f(tileX * tileSize, tileY * tileSize);
                 quad[1].texCoords = sf::Vector2f((tileX+1) * tileSize, tileY * tileSize);
@@ -37,7 +37,7 @@ void TileMap::load(sf::Texture &texture, std::vector<std::vector<short>> &tiles,
                 shape.setOutlineColor(sf::Color::Yellow);
                 shape.setOutlineThickness(.5f);
                 grid.push_back(shape);
-            }
+            } 
         }
 }
 

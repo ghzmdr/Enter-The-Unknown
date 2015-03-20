@@ -55,6 +55,14 @@ void FloorEditor::update(sf::Time deltaT)
 
 void FloorEditor::draw()
 {       
+    context.window->setView(tilesView);
+    
+    sf::RectangleShape leftPanelBG;
+    leftPanelBG.setSize(tilesView.getSize());
+    leftPanelBG.setFillColor({130,130,130});
+    leftPanelBG.setPosition(0,0);
+    context.window->draw(leftPanelBG);
+
     context.window->setView(view);       
 
     context.window->draw(currentFloor);
@@ -65,5 +73,11 @@ void FloorEditor::handleEvent(const sf::Event& event)
 {
     if (event.type == sf::Event::MouseButtonPressed)
         if(event.mouseButton.button == sf::Mouse::Left)
-            printf("PRESSED\n");
+            addTileAt(sf::Mouse::getPosition(*(sf::Window*)context.window));
+}
+
+void FloorEditor::addTileAt(sf::Vector2i position)
+{
+    auto pos = position;
+    pos.x /= currentFloor.tileSize;
 }
