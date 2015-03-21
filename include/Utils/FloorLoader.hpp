@@ -13,7 +13,7 @@ public:
     std::vector<std::vector<short>> getCollidables() ;
 
     std::string getTileSheetFileName() ;
-    u_short getTileSize() ;
+    unsigned short getTileSize() ;
 
     sf::Vector2i getFloorSize() ;
     sf::Vector2i getSpawnPosition();

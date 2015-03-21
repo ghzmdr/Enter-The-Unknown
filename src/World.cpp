@@ -5,13 +5,14 @@
 
 
 World::World(State::Context con, const std::string &floorFileName)
-:context{con}, textures{*(con.textures)}, fonts{*(con.fonts)}, drawStatsFlag{false}
-{        
+:context{*(con.window), *(con.textures), *(con.fonts)},
+textures(*(con.textures)), fonts(*(con.fonts)), drawStatsFlag{false}
+{
     stats.setFont(fonts[Fonts::Main]);
     stats.setCharacterSize(15);
-    
+
     loadFloor();
-    loadPlayer();   
+    loadPlayer();
 
     worldView.zoom(.5);
     worldView.setSize(context.window->getSize().x/2, context.window->getSize().y/2);
@@ -19,7 +20,7 @@ World::World(State::Context con, const std::string &floorFileName)
 }
 
 void World::loadFloor()
-{   
+{
     FloorLoader floorData{"data/floors/testfloor/testfloor.json"};
     currentFloor.tileSize = floorData.getTileSize();
     currentFloor.setTileSheet(textures[floorData.getTileSheetFileName()]);
@@ -34,13 +35,13 @@ void World::loadPlayer()
     EntityLoader playerLoader{"data/players/dimitri/dimitri.json"};
 
     player.setTexture(textures[playerLoader.getSheetFileName()]);
-    
+
     auto psize = playerLoader.getSize();
     player.setTextureRect({0,0,psize.x,psize.y});
 
     auto pSpawn = currentFloor.spawnPosition;
     player.setPosition(pSpawn.x, pSpawn.y);
-    
+
     player.setWalkingAnimFrames(playerLoader.getMovementFrames());
 }
 
@@ -50,9 +51,9 @@ void World::update(sf::Time deltaT)
     currentFloor.viewBounds = {worldView.getCenter().x, worldView.getCenter().y, worldView.getSize().x,  worldView.getSize().y};
 
     player.setRunning(sf::Keyboard::isKeyPressed(sf::Keyboard::Z));
-    stats.setString("Player Speed: " + toString(player.getSpeed()) + "\ntop: " + toString(player.top()) + "\nright: " + toString(player.right()) + "\nbottom: " + toString(player.bottom()) + "\nleft: " + toString(player.left()));    
+    stats.setString("Player Speed: " + toString(player.getSpeed()) + "\ntop: " + toString(player.top()) + "\nright: " + toString(player.right()) + "\nbottom: " + toString(player.bottom()) + "\nleft: " + toString(player.left()));
     movePlayer();
-    player.update();    
+    player.update();
 
     if (player.collides(currentFloor.getExit()))
         printf("WININININININ\n");
@@ -60,9 +61,9 @@ void World::update(sf::Time deltaT)
 }
 
 void World::draw()
-{       
-    worldView.setCenter(player.getPosition());    
-    context.window->setView(worldView);       
+{
+    worldView.setCenter(player.getPosition());
+    context.window->setView(worldView);
 
     context.window->draw(currentFloor);
     context.window->draw(player);
@@ -78,12 +79,12 @@ void World::drawStats()
 }
 
 void World::movePlayer()
-{   
+{
     float playerSpeed = player.getSpeed();
-        
-    for(auto &obj : currentFloor.getCollidables())     
+
+    for(auto &obj : currentFloor.getCollidables())
         player.checkCollisions(obj, currentFloor.tileSize);
-        
+
     player.checkCollisions(currentFloor.bounds, currentFloor.tileSize);
 
     if (sf::Keyboard::isKeyPressed(sf::Keyboard::Left))
@@ -95,8 +96,8 @@ void World::movePlayer()
     if (sf::Keyboard::isKeyPressed(sf::Keyboard::Up))
         player.walk(Player::Direction::Up);
 
-    if (sf::Keyboard::isKeyPressed(sf::Keyboard::Down))        
-        player.walk(Player::Direction::Down);    
+    if (sf::Keyboard::isKeyPressed(sf::Keyboard::Down))
+        player.walk(Player::Direction::Down);
 }
 
 void World::handleEvent(const sf::Event &event)

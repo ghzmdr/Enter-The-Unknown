@@ -11,24 +11,24 @@ class EntityLoader : private JsonParser
 public:
     EntityLoader(const std::string &filename);
 
-    u_short getLives();
-    u_short getPower();
-    
+    unsigned short getLives();
+    unsigned short getPower();
+
     float getSpeed();
-    
+
     sf::Vector2i getSize();
-    
+
     const std::string getScriptFilename();
     const std::string getSheetFileName();
 
-    std::vector<u_short> getMovementFrames();
-    std::vector<u_short> getAttackFrames();
-    std::vector<u_short> getDeathFrames();
+    std::vector<unsigned short> getMovementFrames();
+    std::vector<unsigned short> getAttackFrames();
+    std::vector<unsigned short> getDeathFrames();
 
 private:
     void loadFrames();
-    void loadSubFrames(const std::string &subField, std::vector<u_short> &destination);
-    
+    void loadSubFrames(const std::string &subField, std::vector<unsigned short> &destination);
+
     Json::Value jFrames;
 };
 

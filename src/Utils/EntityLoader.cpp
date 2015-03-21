@@ -6,10 +6,10 @@ EntityLoader::EntityLoader(const std::string &filename)
 :JsonParser{filename}, jFrames{false}
 {}
 
-u_short EntityLoader::getLives()
+unsigned short EntityLoader::getLives()
 {return getNumber("lives");}
 
-u_short EntityLoader::getPower()
+unsigned short EntityLoader::getPower()
 {return getNumber("damage");}
 
 float EntityLoader::getSpeed()
@@ -26,23 +26,23 @@ const std::string EntityLoader::getSheetFileName()
 
 
 
-std::vector<u_short> EntityLoader::getMovementFrames()
-{        
-    std::vector<u_short> ret;
+std::vector<unsigned short> EntityLoader::getMovementFrames()
+{
+    std::vector<unsigned short> ret;
     loadSubFrames("movement", ret);
     return ret;
 }
 
-std::vector<u_short> EntityLoader::getAttackFrames()
+std::vector<unsigned short> EntityLoader::getAttackFrames()
 {
-    std::vector<u_short> ret;
+    std::vector<unsigned short> ret;
     loadSubFrames("attack", ret);
     return ret;
 }
 
-std::vector<u_short> EntityLoader::getDeathFrames()
+std::vector<unsigned short> EntityLoader::getDeathFrames()
 {
-    std::vector<u_short> ret;
+    std::vector<unsigned short> ret;
     loadSubFrames("death", ret);
     return ret;
 }
@@ -54,7 +54,7 @@ void EntityLoader::loadFrames()
     err_default(jFrames != false);
 }
 
-void EntityLoader::loadSubFrames(const std::string &subField, std::vector<u_short> &destination)
+void EntityLoader::loadSubFrames(const std::string &subField, std::vector<unsigned short> &destination)
 {
     if (jFrames == false) loadFrames();
     std::string field = "animation->"+subField;
@@ -63,6 +63,6 @@ void EntityLoader::loadSubFrames(const std::string &subField, std::vector<u_shor
 
     for (auto fVal : jMFrames)
         destination.push_back(fVal.asInt());
-    
+
     err_default(!destination.empty());
 }

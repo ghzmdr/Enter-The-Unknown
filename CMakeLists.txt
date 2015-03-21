@@ -26,8 +26,7 @@ set(SOURCE_FILES
     main.cpp)
 
 LINK_DIRECTORIES(/usr/include/SFML)
-LINK_DIRECTORIES(/usr/include/json)
-LINK_LIBRARIES(sfml-graphics sfml-window sfml-system jsoncpp)
+LINK_LIBRARIES(sfml-graphics sfml-window sfml-system)
 include_directories(include)
 
 add_executable(Enter_The_Unknown ${HEADER_FILES} ${SOURCE_FILES})

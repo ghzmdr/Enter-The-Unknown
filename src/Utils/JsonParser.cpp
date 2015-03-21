@@ -4,11 +4,11 @@ JsonParser::JsonParser(const std::string &filename)
 : filename{filename}
 {
     std::ifstream file{filename, std::ifstream::binary};
-    
+
     if (!reader.parse(file, root))
     {
-        printf("Could not parse json: %s", filename.c_str());  
-        exit(EXIT_FAILURE);
+        printf("Could not parse json: %s", filename.c_str());
+        //exit(EXIT_FAILURE);
     }
 }
 

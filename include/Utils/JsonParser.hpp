@@ -26,10 +26,10 @@ protected:
 
 static void jsonErrMsg(bool condition, std::string &filename, const std::string &field)
 {
-    if (!condition) 
+    if (!condition)
     {
         printf("[!ERROR!] Could not read field %s from %s", field.c_str(), filename.c_str());
-        exit(EXIT_FAILURE);
+        //exit(-1);
     }
 }
 

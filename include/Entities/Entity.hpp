@@ -9,7 +9,7 @@ class Entity : public GameObject
 
 public:
 static constexpr float defaultSpeed {1.5}, diagonalFactor {1.2}, runFactor {1.5};
-static constexpr u_short animSkipFrames{10};
+static constexpr unsigned short animSkipFrames{10};
 enum class Direction { Left, Right, Up, Down };
 
 public:
@@ -18,8 +18,8 @@ public:
     virtual void update();
 
     void takeDamage(int amount=1);
-    uint getLives() const;
-    void setLives(uint amount);
+    unsigned short getLives() const;
+    void setLives(unsigned short amount);
 
     bool isAlive() const;
 
@@ -31,35 +31,35 @@ public:
 
     void walk(Direction dir);
 
-    void checkCollisions(GameObject &obj, uint range);
-    void checkCollisions(sf::IntRect bounds, u_short tileSize);
+    void checkCollisions(GameObject &obj, unsigned short range);
+    void checkCollisions(sf::IntRect bounds, unsigned short tileSize);
     bool collides(GameObject &obj);
 
-    void setWalkingAnimFrames(std::vector<u_short> frames);
-    void setAttackingAnimFrames(std::vector<u_short> frames);
-    void setDyingAnimFrames(std::vector<u_short> frames);
+    void setWalkingAnimFrames(std::vector<unsigned short> frames);
+    void setAttackingAnimFrames(std::vector<unsigned short> frames);
+    void setDyingAnimFrames(std::vector<unsigned short> frames);
 
 protected:
     virtual void animate();
     void reset();
-    bool isObjectInRange(GameObject &obj, uint range);
+    bool isObjectInRange(GameObject &obj, unsigned short range);
     bool canGoLeft = true, canGoRight = true, canGoUp = true, canGoDown = true;
 
-    uint lives;
+    unsigned short lives;
     float speed;
 
     bool walking;
     bool running;
     bool canRun;
-    
-    u_short framesSkipped;    
+
+    unsigned short framesSkipped;
     sf::Vector2f velocity;
 
-    u_short currentFrame;
+    unsigned short currentFrame;
 
-    std::vector<u_short> walkingFrames;
-    std::vector<u_short> attackingFrames;
-    std::vector<u_short> dyingFrames;   
+    std::vector<unsigned short> walkingFrames;
+    std::vector<unsigned short> attackingFrames;
+    std::vector<unsigned short> dyingFrames;
 };
 
 #endif

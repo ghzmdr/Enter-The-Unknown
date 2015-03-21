@@ -5,7 +5,7 @@ FloorLoader::FloorLoader(const std::string &filename)
 : JsonParser{filename}
 {}
 
-std::vector<std::vector<short>> FloorLoader::getMap() 
+std::vector<std::vector<short>> FloorLoader::getMap()
 {
     const std::string field = "map";
     std::vector<std::vector<short>> ret;
@@ -14,7 +14,7 @@ std::vector<std::vector<short>> FloorLoader::getMap()
     return ret;
 }
 
-std::vector<std::vector<short>> FloorLoader::getCollidables() 
+std::vector<std::vector<short>> FloorLoader::getCollidables()
 {
     std::vector<std::vector<short>> ret;
     json2WorldMap("collidables", ret);
@@ -22,13 +22,13 @@ std::vector<std::vector<short>> FloorLoader::getCollidables()
 }
 
 
-std::string FloorLoader::getTileSheetFileName() 
+std::string FloorLoader::getTileSheetFileName()
 {return getString("tilesheet");}
 
-u_short FloorLoader::getTileSize() 
+unsigned short FloorLoader::getTileSize()
 {return getNumber("tilesize");}
 
-sf::Vector2i FloorLoader::getFloorSize() 
+sf::Vector2i FloorLoader::getFloorSize()
 {
     sf::Vector2i ret;
     auto map = getMap();
@@ -40,7 +40,7 @@ sf::Vector2i FloorLoader::getFloorSize()
     return ret;
 }
 
-sf::Vector2i FloorLoader::getSpawnPosition() 
+sf::Vector2i FloorLoader::getSpawnPosition()
 {return getVector("spawn");}
 
 sf::Vector2i FloorLoader::getExitPosition()

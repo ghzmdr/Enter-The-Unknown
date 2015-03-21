@@ -10,12 +10,12 @@ public:
 
     virtual void animate();
 
-    void setDamage(u_short amount);
-    u_short getDamage();
+    void setDamage(unsigned short amount);
+    unsigned short getDamage();
 
 
-private:    
-    u_short damage;
+private:
+    unsigned short damage;
 
 
     //Every enemy has:

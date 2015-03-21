@@ -5,8 +5,8 @@ Enemy::Enemy()
 {
 }
 
-void Enemy::setDamage(u_short amount){damage = amount;}
-u_short Enemy::getDamage(){return damage;}
+void Enemy::setDamage(unsigned short amount){damage = amount;}
+unsigned short Enemy::getDamage(){return damage;}
 
 void Enemy::animate()
 {

@@ -11,7 +11,7 @@ class Floor : private sf::NonCopyable, public sf::Drawable, public sf::Transform
 public:
     typedef std::vector<std::vector<short>> MapData;
 
-public: 
+public:
     Floor(): drawBoundings{false}{};
 
     void update(sf::Time deltaT);
@@ -25,21 +25,21 @@ public:
 
     sf::IntRect bounds;
     sf::FloatRect viewBounds;
-    u_short tileSize;
+    unsigned short tileSize;
 
     sf::Vector2i spawnPosition;
     void setExit(sf::Vector2i pos)
     {
         exit.setPosition(pos.x, pos.y);
-        exit.setTexture(tileSheet); 
-        exit.setTextureRect({{(int)tileSheet.getSize().x / tileSize, (int)tileSheet.getSize().y / tileSize}, {tileSize, tileSize}});        
+        exit.setTexture(tileSheet);
+        exit.setTextureRect({{(int)tileSheet.getSize().x / tileSize, (int)tileSheet.getSize().y / tileSize}, {tileSize, tileSize}});
     }
 
     GameObject& getExit() {return exit;}
 
     bool drawBoundings;
 private:
-    const u_short drawOffset = 2;
+    const unsigned short drawOffset = 2;
 
     const bool isInBounds(const sf::Vector2f &tile) const;
     virtual void draw(sf::RenderTarget &target, sf::RenderStates states) const;

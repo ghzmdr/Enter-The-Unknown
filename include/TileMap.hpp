@@ -15,7 +15,7 @@ class TileMap : public sf::Drawable, public sf::Transformable
 {
 public:
     TileMap();
-    void load(sf::Texture &texture, std::vector<std::vector<short>> &tiles, u_short tileSize);
+    void load(sf::Texture &texture, std::vector<std::vector<short>> &tiles, unsigned short tileSize);
     std::vector<sf::RectangleShape> grid;
 private:
 

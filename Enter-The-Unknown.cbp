@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<CodeBlocks_project_file>
+	<FileVersion major="1" minor="6" />
+	<Project>
+		<Option title="Enter-The-Unknown" />
+		<Option pch_mode="2" />
+		<Option compiler="gcc" />
+		<Build>
+			<Target title="Debug">
+				<Option output="bin/Debug/Enter-The-Unknown" prefix_auto="1" extension_auto="1" />
+				<Option object_output="obj/Debug/" />
+				<Option type="1" />
+				<Option compiler="gcc" />
+				<Compiler>
+					<Add option="-g" />
+				</Compiler>
+			</Target>
+			<Target title="Release">
+				<Option output="bin/Release/Enter-The-Unknown" prefix_auto="1" extension_auto="1" />
+				<Option object_output="obj/Release/" />
+				<Option type="1" />
+				<Option compiler="gcc" />
+				<Compiler>
+					<Add option="-O2" />
+				</Compiler>
+				<Linker>
+					<Add option="-s" />
+				</Linker>
+			</Target>
+		</Build>
+		<Compiler>
+			<Add option="-std=c++11" />
+			<Add option="-Wall" />
+			<Add option="-fexceptions" />
+			<Add option="-DSFML_STATIC" />
+			<Add option="-DGLEW_STATIC" />
+			<Add option="-Dgdi32" />
+			<Add directory="C:/Users/Ghizmo/Desktop/Enter-The-Unknown/include" />
+			<Add directory="C:/SFML-2.2/include" />
+		</Compiler>
+		<Linker>
+			<Add library="sfml-graphics-s" />
+			<Add library="sfml-window-s" />
+			<Add library="sfml-system-s" />
+			<Add library="glu32" />
+			<Add library="gdi32" />
+			<Add library="sndfile" />
+			<Add library="winmm" />
+			<Add library="glew" />
+			<Add library="freetype" />
+			<Add library="jpeg" />
+			<Add library="sndfile" />
+			<Add library="openal32" />
+			<Add library="opengl32" />
+			<Add directory="C:/SFML-2.2/lib" />
+		</Linker>
+		<Unit filename="include/Application.hpp" />
+		<Unit filename="include/Debug.h" />
+		<Unit filename="include/Editor/FloorEditor.hpp" />
+		<Unit filename="include/Entities/Enemy.hpp" />
+		<Unit filename="include/Entities/Entity.hpp" />
+		<Unit filename="include/Floor.hpp" />
+		<Unit filename="include/GUI/Button.hpp" />
+		<Unit filename="include/GUI/Component.hpp" />
+		<Unit filename="include/GameObject.hpp" />
+		<Unit filename="include/Player.hpp" />
+		<Unit filename="include/Resource/ResourceManager.hpp" />
+		<Unit filename="include/Resource/Resources.hpp" />
+		<Unit filename="include/States/FloorEditorState.hpp" />
+		<Unit filename="include/States/GameState.hpp" />
+		<Unit filename="include/States/State.hpp" />
+		<Unit filename="include/States/StateID.hpp" />
+		<Unit filename="include/States/StateStack.hpp" />
+		<Unit filename="include/States/TitleState.hpp" />
+		<Unit filename="include/TileMap.hpp" />
+		<Unit filename="include/Utils/EntityLoader.hpp" />
+		<Unit filename="include/Utils/FloorLoader.hpp" />
+		<Unit filename="include/Utils/JsonParser.hpp" />
+		<Unit filename="include/Utils/Utility.hpp" />
+		<Unit filename="include/World.hpp" />
+		<Unit filename="include/json/assertions.h" />
+		<Unit filename="include/json/autolink.h" />
+		<Unit filename="include/json/config.h" />
+		<Unit filename="include/json/features.h" />
+		<Unit filename="include/json/forwards.h" />
+		<Unit filename="include/json/json.h" />
+		<Unit filename="include/json/reader.h" />
+		<Unit filename="include/json/value.h" />
+		<Unit filename="include/json/version.h" />
+		<Unit filename="include/json/writer.h" />
+		<Unit filename="main.cpp" />
+		<Unit filename="src/Application.cpp" />
+		<Unit filename="src/Editor/FloorEditor.cpp" />
+		<Unit filename="src/Entities/Enemy.cpp" />
+		<Unit filename="src/Entities/Entity.cpp" />
+		<Unit filename="src/Floor.cpp" />
+		<Unit filename="src/GUI/Button.cpp" />
+		<Unit filename="src/GUI/Component.cpp" />
+		<Unit filename="src/GameObject.cpp" />
+		<Unit filename="src/Player.cpp" />
+		<Unit filename="src/States/FloorEditorState.cpp" />
+		<Unit filename="src/States/GameState.cpp" />
+		<Unit filename="src/States/State.cpp" />
+		<Unit filename="src/States/StateStack.cpp" />
+		<Unit filename="src/States/TitleState.cpp" />
+		<Unit filename="src/TileMap.cpp" />
+		<Unit filename="src/Utils/EntityLoader.cpp" />
+		<Unit filename="src/Utils/FloorLoader.cpp" />
+		<Unit filename="src/Utils/JsonParser.cpp" />
+		<Unit filename="src/World.cpp" />
+		<Unit filename="src/json/json_reader.cpp" />
+		<Unit filename="src/json/json_tool.h" />
+		<Unit filename="src/json/json_value.cpp" />
+		<Unit filename="src/json/json_valueiterator.inl" />
+		<Unit filename="src/json/json_writer.cpp" />
+		<Extensions>
+			<code_completion />
+			<envvars />
+			<debugger />
+			<lib_finder disable_auto="1" />
+		</Extensions>
+	</Project>
+</CodeBlocks_project_file>

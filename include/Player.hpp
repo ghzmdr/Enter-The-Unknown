@@ -5,12 +5,12 @@
 
 class Player : public Entity
 {
-    
+
 static constexpr float playerSpeed{1.5};
-static constexpr uint playerLives{5};
+static constexpr unsigned short playerLives{5};
 
 public:
-    Player();    
+    Player();
     virtual void update();
 private:
    //virtual void animate();

@@ -3,7 +3,7 @@
 TileMap::TileMap()
 {}
 
-void TileMap::load(sf::Texture &texture, std::vector<std::vector<short>> &tiles, u_short tileSize)
+void TileMap::load(sf::Texture &texture, std::vector<std::vector<short>> &tiles, unsigned short tileSize)
 {
     tilesheet = texture;
     vertices.setPrimitiveType(sf::Quads);
@@ -37,7 +37,7 @@ void TileMap::load(sf::Texture &texture, std::vector<std::vector<short>> &tiles,
                 shape.setOutlineColor(sf::Color::Yellow);
                 shape.setOutlineThickness(.5f);
                 grid.push_back(shape);
-            } 
+            }
         }
 }
 
