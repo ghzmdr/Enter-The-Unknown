@@ -4,7 +4,8 @@
 #include <SFML/Graphics.hpp>
 
 #include "TileMap.hpp"
-#include "GameObject.hpp"
+#include "Entities/GameObject.hpp"
+#include "Entities/Obstacle.hpp"
 
 class Floor : private sf::NonCopyable, public sf::Drawable, public sf::Transformable
 {
@@ -21,7 +22,7 @@ public:
     void loadTileMap(MapData map);
     void loadCollidables(MapData map);
 
-    std::vector<GameObject> getCollidables(){return collidables;}
+    std::vector<Obstacle> getCollidables(){return collidables;}
 
     sf::IntRect bounds;
     sf::FloatRect viewBounds;
@@ -30,14 +31,15 @@ public:
     sf::Vector2i spawnPosition;
     void setExit(sf::Vector2i pos)
     {
-        exit.setPosition(pos.x, pos.y);
-        exit.setTexture(tileSheet);
-        exit.setTextureRect({{(int)tileSheet.getSize().x / tileSize, (int)tileSheet.getSize().y / tileSize}, {tileSize, tileSize}});
+        exit.position = {pos.x * 1.f, pos.y * 1.f};
+        //exit.setTexture(tileSheet);
+        //exit.setTextureRect({{(int)tileSheet.getSize().x / tileSize, (int)tileSheet.getSize().y / tileSize}, {tileSize, tileSize}});
     }
 
     GameObject& getExit() {return exit;}
 
     bool drawBoundings;
+    std::vector<Obstacle> collidables;
 private:
     const unsigned short drawOffset = 2;
 
@@ -47,15 +49,12 @@ private:
     TileMap tileMap;
 
     sf::Texture tileSheet;
-    std::vector<GameObject> collidables;
-
+    
     std::vector<sf::RectangleShape> boundings;
 
     GameObject exit;
 
-    template<typename Object>
-    void map2Layer(const MapData &source, std::vector<Object> &destination);
-
+    void map2Layer(const MapData &source);
 };
 
 #endif

@@ -5,7 +5,6 @@
 
 #include "States/State.hpp"
 
-#include "Player.hpp"
 #include "Floor.hpp"
 
 #include "Utils/EntityLoader.hpp"
@@ -29,7 +28,7 @@ private:
     TextureManager &textures;
     FontManager &fonts;    
 
-    Player player;    
+    //Player player;    
     Floor currentFloor;
     sf::View view;
     sf::View tilesView;

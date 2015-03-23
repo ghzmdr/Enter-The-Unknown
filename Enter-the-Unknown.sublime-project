@@ -11,7 +11,8 @@
     {
       "sublimeclang_options":
       [
-        "-I${project_path}/include"
+        "-I${project_path}/include/",
+        "-ferror-limit=0"
       ]
     }
 }

@@ -1,5 +1,5 @@
-#include <Components/GraphicsComponent.hpp>
 #include "Floor.hpp"
+
 
 void Floor::loadTileMap(MapData map)
 {
@@ -12,7 +12,27 @@ void Floor::setTileSheet(sf::Texture &ts)
 
 void Floor::loadCollidables(MapData map)
 {
-    map2Layer(map);
+    int maxRow = tileSheet.getSize().x/tileSize;
+
+    for (int i = 0; i < map.size(); i++)
+        for (int j = 0; j < map[i].size(); j++)
+            if (map[i][j] >= 0)
+            {
+                collidables.push_back(obstacleFactory(map[i][j], i,j, maxRow));
+                sf::RectangleShape r;
+                r.setPosition(j*tileSize - tileSize/2, )
+                boundings.push_back(sf::);
+            }
+             
+
+                sf::RectangleShape shape;
+                shape.setPosition(j * tileSize - tileSize/2, i * tileSize -tileSize/2);
+                shape.setSize({(float)tileSize, (float)tileSize});
+                shape.setFillColor(sf::Color::Transparent);
+                shape.setOutlineColor(sf::Color::Red);
+                shape.setOutlineThickness(.5f);
+                boundings.push_back(shape);
+            }
 }
 
 void Floor::update(sf::Time deltaT)
@@ -28,11 +48,11 @@ void Floor::draw(sf::RenderTarget &target, sf::RenderStates states) const
         for (auto &g : tileMap.grid)
             if (isInBounds(g.getPosition()))
                 target.draw(g);
-
+/*
     for (auto &obj : collidables)
-        if (isInBounds(obj.position))            
-                target.draw(obj);
-
+        if (isInBounds(obj.position)
+            target.draw(obj);
+*/
     if (drawBoundings)
         for(auto &b : boundings)
             if (isInBounds(b.getPosition()))
@@ -59,28 +79,13 @@ const bool Floor::isInBounds(const sf::Vector2f &tilePosition) const
 
 }
 
-void Floor::map2Layer(const MapData &source)
+std::unique_ptr<Obstacle> Floor::obstacleFactory(unsigned short id, int j, int i, int maxWidth)
 {
-    for (int i = 0; i < source.size(); i++)
-        for (int j = 0; j < source[i].size(); j++)
-            if (source[i][j] >= 0)
-            {
-                int tileID = source[i][j];
-                int tileSheetWidth = tileSheet.getSize().x/tileSize;
+       int tileSheetWidth = tileSheet.getSize().x/tileSize;
 
-                sf::Vector2i tilePosition = {(tileID % tileSheetWidth) * tileSize, (tileID / tileSheetWidth) *tileSize};
+        sf::Vector2i tilePosition = {(id % tileSheetWidth) * tileSize, (id / tileSheetWidth) * tileSize};        
+        std::unique_ptr<Obstacle> tile (new Obstacle(new GraphicsComponent(tileSheet, {tilePosition, {tileSize, tileSize}})));        
+        tile->position = {j * tileSize * 1.f , i * tileSize * 1.f};                
 
-                sf::Vector2f tposition = {j * tileSize * 1.f , i * tileSize * 1.f};  
-                sf::Vector2i tsize = {tileSize, tileSize};
-                Obstacle tile{new GraphicsComponent(tileSheet, {tilePosition, {tileSize, tileSize}}), tposition, tsize};
-                collidables.push_back(tile);
-
-                sf::RectangleShape shape;
-                shape.setPosition(j * tileSize - tileSize/2, i * tileSize -tileSize/2);
-                shape.setSize({(float)tileSize, (float)tileSize});
-                shape.setFillColor(sf::Color::Transparent);
-                shape.setOutlineColor(sf::Color::Red);
-                shape.setOutlineThickness(.5f);
-                boundings.push_back(shape);
-            }
+        return std::move(tile);
 }

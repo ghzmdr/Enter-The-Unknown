@@ -5,13 +5,17 @@
 
 #include "States/State.hpp"
 
-#include "Player.hpp"
+#include "Entities/Entity.hpp"
 #include "Floor.hpp"
 
 #include "Utils/EntityLoader.hpp"
 #include "Utils/FloorLoader.hpp"
 
 #include "Resource/Resources.hpp"
+
+#include "Components/Component.hpp"
+#include "Components/PhysicsComponent.hpp"
+#include "Components/PlayerInputMovementComponent.hpp"
 
 class World : private sf::NonCopyable
 {
@@ -30,6 +34,8 @@ private:
     template<typename Object>
     void map2Layer(const std::vector<std::vector<short>> &source, std::vector<Object> &destination, int tileSize, int rowMax);
 
+    std::unique_ptr<Entity> playerFactory();
+
     void movePlayer();
     sf::Text stats;
 
@@ -38,10 +44,13 @@ private:
     TextureManager &textures;
 
     FontManager &fonts;
-    Player player;
+    std::unique_ptr<Entity> player;
     Floor currentFloor;
 
     sf::View worldView;
+
+    PhysicsComponent physics;
+    PlayerInputMovementComponent input;
 };
 
 #endif

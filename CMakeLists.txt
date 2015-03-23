@@ -4,11 +4,20 @@ project(Enter_The_Unknown)
 set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -std=c++11")
 
 set(SOURCE_FILES
+    src/Components/GraphicsComponent.cpp
+    src/Components/PhysicsComponent.cpp
+    src/Components/MovementComponent.cpp
+    src/Components/PlayerInputMovementComponent.cpp
+    src/json/json_writer.cpp
+    src/json/json_tool.h
+    src/json/json_value.cpp
+    src/json/json_valueiterator.inl
+    src/json/json_reader.cpp
     src/Editor/FloorEditor.cpp
-    src/Entities/Enemy.cpp
     src/Entities/Entity.cpp
     src/GUI/Button.cpp
     src/GUI/Component.cpp
+    src/Entities/Obstacle.cpp
     src/States/FloorEditorState.cpp
     src/States/GameState.cpp
     src/States/State.cpp
@@ -20,8 +29,6 @@ set(SOURCE_FILES
     src/Application.cpp
     src/Floor.cpp
     src/TileMap.cpp
-    src/GameObject.cpp
-    src/Player.cpp
     src/World.cpp
     main.cpp)
 

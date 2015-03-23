@@ -14,7 +14,7 @@ textures(*context.textures), fonts(*context.fonts)
     view.setViewport(sf::FloatRect(.2f,0,.8f, 1));
     view.zoom(.5);
     view.setSize(context.window->getSize().x/2, context.window->getSize().x/2);
-    view.setCenter(player.getPosition());
+    //view.setCenter(player.position);
 }
 
 void FloorEditor::loadFloor()
@@ -29,12 +29,12 @@ void FloorEditor::loadFloor()
 void FloorEditor::loadPlayer()
 {
     EntityLoader playerLoader{"data/players/dimitri/dimitri.json"};
-    player.setTexture(textures[playerLoader.getSheetFileName()]);
+    //player.setTexture(textures[playerLoader.getSheetFileName()]);
     auto psize = playerLoader.getSize();
-    player.setTextureRect({0,0,psize.x,psize.y});
+    //player.setTextureRect({0,0,psize.x,psize.y});
     auto pSpawn = currentFloor.spawnPosition;
-    player.setPosition(pSpawn.x, pSpawn.y);
-    player.setWalkingAnimFrames(playerLoader.getMovementFrames());
+    //player.setPosition(pSpawn.x, pSpawn.y);
+    //player.setWalkingAnimFrames(playerLoader.getMovementFrames());
 }
 
 void FloorEditor::update(sf::Time deltaT)

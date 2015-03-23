@@ -10,6 +10,7 @@
     },
 
     "size": {"X": 14, "Y": 32},
+    //"sheet": "res/img/title/background.png",
     "sheet": "data/players/dimitri/dimitri.png",
     "animation": {
         "movement": [0,1,2,3,4],
