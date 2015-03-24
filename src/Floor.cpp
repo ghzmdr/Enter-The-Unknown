@@ -18,6 +18,14 @@ void Floor::loadCollidables(MapData map)
 void Floor::update(sf::Time deltaT)
 {}
 
+void Floor::loadEnemies(std::vector<EnemyData> enemiesData)
+{
+    for (auto &e : enemiesData)
+    {
+        printf("%s, %f %f\n", e.kind.c_str(), e.position.x, e.position.y);
+    }
+}
+
 void Floor::draw(sf::RenderTarget &target, sf::RenderStates states) const
 {
     states.transform *= getTransform();

@@ -40,4 +40,10 @@ std::unique_ptr<Entity> static EntityFactory(const std::string &filename, Textur
     return std::move(eptr);
 }
 
+struct EnemyData
+{
+    std::string kind;
+    sf::Vector2f position;
+};
+
 #endif

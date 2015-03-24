@@ -6,6 +6,9 @@
 #include "TileMap.hpp"
 #include "Entities/GameObject.hpp"
 #include "Entities/Obstacle.hpp"
+#include "Factories/EntityFactory.hpp"
+
+#include <memory>
 
 class Floor : private sf::NonCopyable, public sf::Drawable, public sf::Transformable
 {
@@ -23,6 +26,8 @@ public:
     void loadCollidables(MapData map);
 
     std::vector<Obstacle> getCollidables(){return collidables;}
+
+    void loadEnemies(std::vector<EnemyData> enemiesData);
 
     sf::IntRect bounds;
     sf::FloatRect viewBounds;
@@ -53,6 +58,8 @@ private:
     std::vector<sf::RectangleShape> boundings;
 
     GameObject exit;
+
+    std::vector<std::unique_ptr<Entity>> enemies;
 
     void map2Layer(const MapData &source);
 };

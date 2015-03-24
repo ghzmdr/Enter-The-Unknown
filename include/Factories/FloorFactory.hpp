@@ -18,6 +18,7 @@ std::unique_ptr<Floor> static FloorLoad(std::unique_ptr<Floor> &fptr, const std:
     auto spos = floorData.getSpawnPosition();
     fptr->spawnPosition = sf::Vector2i{spos.x, spos.y};
     fptr->setExit(floorData.getExitPosition());
+    fptr->loadEnemies(floorData.getEnemies());
     return std::move(fptr);
 }
 

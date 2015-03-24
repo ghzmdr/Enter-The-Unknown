@@ -3,6 +3,7 @@
 
 #include <SFML/System/Vector2.hpp>
 #include "Utils/JsonParser.hpp"
+#include "Factories/EntityFactory.hpp"
 
 class FloorLoader : private JsonParser
 {
@@ -15,6 +16,8 @@ public:
     std::string getTileSheetFileName();
     
     unsigned short getTileSize();
+
+    std::vector<EnemyData> getEnemies();
 
     sf::Vector2i getFloorSize();
     sf::Vector2i getSpawnPosition();

@@ -8,14 +8,12 @@
 
 {
     "KEYBOARD" : {
-        "DOWN": "S",
         "UP": "W",
         "LEFT": "A",
+        "DOWN": "S",
         "RIGHT": "D",
 
-        "RUN": "LSHIFT",
-        "PRIMARY": "D",
-        "SECONDARY": "C",    
+        "RUN": "LSHIFT"
     },
 
     "CONTROLLER" : {

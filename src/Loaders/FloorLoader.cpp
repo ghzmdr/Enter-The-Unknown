@@ -21,6 +21,36 @@ std::vector<std::vector<short>> FloorLoader::getCollidables()
     return ret;
 }
 
+std::vector<EnemyData> FloorLoader::getEnemies()
+{
+    std::vector<EnemyData> ret;
+    std::string field = "enemies";
+    Json::Value enemyArray = root.get(field, false);
+    err_default(enemyArray != false);
+
+    for (int i = 0; i < enemyArray.size(); i++)        
+    {
+        std::string field = "kind";
+        std::string kind = enemyArray[i].get(field, "null").asString();
+        err_default(kind != "null");
+
+        field = "position";
+        Json::Value pos = enemyArray[i].get(field, false);
+        err_default(pos != false);
+
+        field = "X";
+        float px = pos.get(field, -9999).asFloat();
+        err_default(px != -9999);
+
+        field = "Y";
+        float py = pos.get(field, -9999).asFloat();
+        err_default(py != -9999);
+
+        ret.push_back({kind, {px, py}});
+    }
+
+    return ret;
+}
 
 std::string FloorLoader::getTileSheetFileName()
 {return getString("tilesheet");}
