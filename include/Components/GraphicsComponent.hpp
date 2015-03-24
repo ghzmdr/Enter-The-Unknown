@@ -18,8 +18,8 @@ public:
 
     sf::Texture texture;
     sf::VertexArray drawable;
-private:
 
+    //made public for animation component to access it
     sf::FloatRect textureRect;
 };
 

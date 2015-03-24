@@ -1,4 +1,4 @@
-#include "Utils/EntityLoader.hpp"
+#include "Loaders/EntityLoader.hpp"
 #include "Debug.h"
 
 
@@ -14,6 +14,9 @@ unsigned short EntityLoader::getPower()
 
 float EntityLoader::getSpeed()
 {return getNumber("speed");}
+
+float EntityLoader::getRun()
+{return getNumber("run");}
 
 sf::Vector2i EntityLoader::getSize()
 {return getVector("size");}

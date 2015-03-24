@@ -7,7 +7,7 @@
 
 #include "Floor.hpp"
 
-#include "Utils/EntityLoader.hpp"
+#include "Loaders/EntityLoader.hpp"
 
 class FloorEditor : private sf::NonCopyable
 {

@@ -27,7 +27,7 @@ void MovementComponent::move(Direction dir, Entity &parent)
     //If moving diagonally move at lower speed
     if (parent.velocity.x != 0 && parent.velocity.y != 0)
     {
-        parent.velocity.x /= parent.diagonalFactor;
-        parent.velocity.y /= parent.diagonalFactor;
+        parent.velocity.x /= DIAGONAL_FACTOR;
+        parent.velocity.y /= DIAGONAL_FACTOR;
     }
 }

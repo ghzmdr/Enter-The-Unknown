@@ -15,6 +15,7 @@ public:
     unsigned short getPower();
 
     float getSpeed();
+    float getRun();
 
     sf::Vector2i getSize();
 

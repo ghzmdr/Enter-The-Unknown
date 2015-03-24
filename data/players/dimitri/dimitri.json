@@ -1,13 +1,15 @@
 {
     "power": 1,
     "lives": 4,
-    "speed": 0.8,
+    "speed": 1.5,
+    "run": 1.5,
     "weapon": "data/weapons/axe/axe.json",
     
     "hitbox": {
         "shape": "rect", 
         "size": {"X": 12, "Y": 30} 
     },
+
 
     "size": {"X": 14, "Y": 32},
     //"sheet": "res/img/title/background.png",

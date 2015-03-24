@@ -8,8 +8,8 @@
 #include "Entities/Entity.hpp"
 #include "Floor.hpp"
 
-#include "Utils/EntityLoader.hpp"
-#include "Utils/FloorLoader.hpp"
+#include "Factories/FloorFactory.hpp"
+#include "Factories/EntityFactory.hpp"
 
 #include "Resource/Resources.hpp"
 
@@ -27,30 +27,19 @@ public:
     void handleEvent(const sf::Event& event);
 
 private:
-    void loadFloor();
-    void loadPlayer();
     bool drawStatsFlag;
-
-    template<typename Object>
-    void map2Layer(const std::vector<std::vector<short>> &source, std::vector<Object> &destination, int tileSize, int rowMax);
-
-    std::unique_ptr<Entity> playerFactory();
-
-    void movePlayer();
+    
+    std::unique_ptr<Entity> player;
+    std::unique_ptr<Floor> currentFloor;
+    
+    sf::View worldView;    
+    
     sf::Text stats;
-
     void drawStats();
+
     State::Context context;
     TextureManager &textures;
-
     FontManager &fonts;
-    std::unique_ptr<Entity> player;
-    Floor currentFloor;
-
-    sf::View worldView;
-
-    PhysicsComponent physics;
-    PlayerInputMovementComponent input;
 };
 
 #endif

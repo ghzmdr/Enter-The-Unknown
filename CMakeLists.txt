@@ -8,6 +8,7 @@ set(SOURCE_FILES
     src/Components/PhysicsComponent.cpp
     src/Components/MovementComponent.cpp
     src/Components/PlayerInputMovementComponent.cpp
+
     src/json/json_writer.cpp
     src/json/json_tool.h
     src/json/json_value.cpp
@@ -23,8 +24,8 @@ set(SOURCE_FILES
     src/States/State.cpp
     src/States/StateStack.cpp
     src/States/TitleState.cpp
-    src/Utils/EntityLoader.cpp
-    src/Utils/FloorLoader.cpp
+    src/Loaders/EntityLoader.cpp
+    src/Loaders/FloorLoader.cpp
     src/Utils/JsonParser.cpp
     src/Application.cpp
     src/Floor.cpp

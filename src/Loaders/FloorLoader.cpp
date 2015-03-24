@@ -1,4 +1,4 @@
-#include "Utils/FloorLoader.hpp"
+#include "Loaders/FloorLoader.hpp"
 #include "Debug.h"
 
 FloorLoader::FloorLoader(const std::string &filename)

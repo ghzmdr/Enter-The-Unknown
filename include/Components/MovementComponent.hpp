@@ -3,6 +3,8 @@
 
 #include "Component.hpp"
 
+#define DIAGONAL_FACTOR 1.3
+
 class Entity;
 
 class MovementComponent : Component

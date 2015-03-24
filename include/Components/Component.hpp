@@ -6,7 +6,6 @@ class Entity;
 class Component
 {
 public:
-    Component(){};
     virtual void update(Entity &parent){};    
 };
 

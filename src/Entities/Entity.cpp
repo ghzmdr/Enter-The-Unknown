@@ -4,11 +4,19 @@
 #include "Components/MovementComponent.hpp"
 #include "Floor.hpp"
 
-Entity::Entity(MovementComponent *mv,PhysicsComponent *ph, GraphicsComponent *gr)
-: physics{ph}, movement{mv}, graphics{gr}{speed = 2, canRun = true;}
+Entity::Entity( std::unique_ptr<MovementComponent> mv,
+                std::unique_ptr<PhysicsComponent> ph,
+                std::unique_ptr<GraphicsComponent> gr, 
+                std::unique_ptr<AnimationComponent> an)
+: movement{std::move(mv)},
+  physics{std::move(ph)},
+graphics{std::move(gr)}, 
+animation{std::move(an)}
+{}
 
 void Entity::update(Floor &floor)
 {
+    canRun = true;
     movement->update(*this);
     
     if (velocity.x != 0)

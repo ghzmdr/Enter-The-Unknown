@@ -28,6 +28,7 @@ void FloorEditor::loadFloor()
 
 void FloorEditor::loadPlayer()
 {
+    /*
     EntityLoader playerLoader{"data/players/dimitri/dimitri.json"};
     //player.setTexture(textures[playerLoader.getSheetFileName()]);
     auto psize = playerLoader.getSize();
@@ -35,6 +36,7 @@ void FloorEditor::loadPlayer()
     auto pSpawn = currentFloor.spawnPosition;
     //player.setPosition(pSpawn.x, pSpawn.y);
     //player.setWalkingAnimFrames(playerLoader.getMovementFrames());
+    */
 }
 
 void FloorEditor::update(sf::Time deltaT)

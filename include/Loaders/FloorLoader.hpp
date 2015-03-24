@@ -9,13 +9,14 @@ class FloorLoader : private JsonParser
 public:
     FloorLoader(const std::string &filename);
 
-    std::vector<std::vector<short>> getMap() ;
-    std::vector<std::vector<short>> getCollidables() ;
+    std::vector<std::vector<short>> getMap();
+    std::vector<std::vector<short>> getCollidables();
 
-    std::string getTileSheetFileName() ;
-    unsigned short getTileSize() ;
+    std::string getTileSheetFileName();
+    
+    unsigned short getTileSize();
 
-    sf::Vector2i getFloorSize() ;
+    sf::Vector2i getFloorSize();
     sf::Vector2i getSpawnPosition();
     sf::Vector2i getExitPosition();
 private:
