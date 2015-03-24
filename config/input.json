@@ -1,0 +1,18 @@
+{
+    "KEYBOARD" : {
+        "DOWN": "DOWN",
+        "UP": "UP",
+        "LEFT": "LEFT",
+        "RIGHT": "RIGHT",
+
+        "RUN": "Z",
+        "PRIMARY": "D",
+        "SECONDARY": "C",    
+    },
+
+    "CONTROLLER" : {
+        "RUN": "A",
+        "PRIMARY": "B",
+        "SECONDARY": "C",      
+    }
+}

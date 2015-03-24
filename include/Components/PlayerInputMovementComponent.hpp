@@ -3,13 +3,16 @@
 
 #include "Components/MovementComponent.hpp"
 #include <SFML/Window/Keyboard.hpp>
-
+#include "Loaders/InputLoader.hpp"
 
 class PlayerInputMovementComponent : public MovementComponent
 {
 public:
-    PlayerInputMovementComponent(){};
+    PlayerInputMovementComponent();
     virtual void update(Entity &parent);    
+
+private:
+    sf::Keyboard::Key left, right, up, down;
 };
 
 

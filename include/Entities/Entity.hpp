@@ -30,7 +30,7 @@ public:
     //Properties
     float speed, runFactor;
 
-    //State holding variables
+    //State holding 
     sf::Vector2f velocity;
     float lastSpeed;
     bool moving, running, canRun;

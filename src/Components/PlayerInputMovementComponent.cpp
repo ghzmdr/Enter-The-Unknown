@@ -2,6 +2,16 @@
 
 #include "Entities/Entity.hpp"
 
+PlayerInputMovementComponent::PlayerInputMovementComponent()
+{
+    InputLoader i;
+    
+    left = i.getKLeft();
+    right = i.getKRight();
+    up = i.getKUp();
+    down = i.getKUp();
+}
+
 void PlayerInputMovementComponent::update(Entity &parent)
 {
     parent.running = sf::Keyboard::isKeyPressed(sf::Keyboard::Z);
