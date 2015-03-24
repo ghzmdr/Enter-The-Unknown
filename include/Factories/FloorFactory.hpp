@@ -11,6 +11,7 @@
 std::unique_ptr<Floor> static FloorLoad(std::unique_ptr<Floor> &fptr, const std::string &filename, TextureManager &textures)
 {
     FloorLoader floorData{filename};
+    fptr->textures = &textures;
     fptr->tileSize = floorData.getTileSize();
     fptr->setTileSheet(textures[floorData.getTileSheetFileName()]);
     fptr->loadTileMap(floorData.getMap());

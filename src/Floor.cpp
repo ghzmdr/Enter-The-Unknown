@@ -16,13 +16,18 @@ void Floor::loadCollidables(MapData map)
 }
 
 void Floor::update(sf::Time deltaT)
-{}
+{
+    for (auto &enemy : enemies)
+        enemy->update(*this);
+}
 
 void Floor::loadEnemies(std::vector<EnemyData> enemiesData)
 {
     for (auto &e : enemiesData)
     {
-        printf("%s, %f %f\n", e.kind.c_str(), e.position.x, e.position.y);
+        std::unique_ptr<Entity> ent = EntityFactory("data/enemies/"+e.kind+"/"+e.kind+".json", *textures, true);
+        ent->position.x = e.position.x; ent->position.y = e.position.y;
+        enemies.push_back(std::move(ent));
     }
 }
 
@@ -41,10 +46,15 @@ void Floor::draw(sf::RenderTarget &target, sf::RenderStates states) const
         if (isInBounds(obj.position))            
                 target.draw(obj);
 
+    for (auto &enemy : enemies)
+        if (isInBounds(enemy->position))
+            target.draw(*enemy);
+
     if (drawBoundings)
         for(auto &b : boundings)
             if (isInBounds(b.getPosition()))
                 target.draw(b);
+
 
     //target.draw(exit);
 }
@@ -91,4 +101,6 @@ void Floor::map2Layer(const MapData &source)
                 shape.setOutlineThickness(.5f);
                 boundings.push_back(shape);
             }
+
+            //ELSE ADD VOID ZONE!
 }

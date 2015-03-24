@@ -26,6 +26,10 @@ std::unique_ptr<Entity> static EntityFactory(const std::string &filename, Textur
     if (!aiControlled)
         mv  = std::unique_ptr<MovementComponent>(new PlayerInputMovementComponent());
     // else load ai script and ai component
+    else {
+        auto aiscript = entityData.getScriptFilename();
+        mv  = std::unique_ptr<MovementComponent>(new PlayerInputMovementComponent());
+    }
 
     std::unique_ptr<PhysicsComponent> ph(new PhysicsComponent());
     std::unique_ptr<AnimationComponent> an(new AnimationComponent());

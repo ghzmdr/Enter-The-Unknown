@@ -2,6 +2,7 @@
     "power": 1,
     "lives": 4,
     "speed": 0.8,
+    "run": 1.2,
     "weapon": "data/weapons/axe/axe.json",
     
     "hitbox": {
@@ -9,8 +10,8 @@
         "size" : {"X": 14, "Y": 30}
     },
     
-    "size": {"W": 16, "H": 32},
-    "sheet": "enemysheet.png",
+    "size": {"X": 16, "Y": 32},
+    "sheet": "data/enemies/basic/basic.png",
     "animation": {
         "movement": [0,1,2],
         "attack":   [3,4,5],

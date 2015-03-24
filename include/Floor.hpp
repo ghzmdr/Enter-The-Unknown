@@ -45,6 +45,7 @@ public:
 
     bool drawBoundings;
     std::vector<Obstacle> collidables;
+    TextureManager *textures;
 private:
     const unsigned short drawOffset = 2;
 

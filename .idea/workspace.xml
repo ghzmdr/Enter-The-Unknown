@@ -17,11 +17,7 @@
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Floor.cpp" afterPath="$PROJECT_DIR$/src/Floor.cpp" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/include/Floor.hpp" afterPath="$PROJECT_DIR$/include/Floor.hpp" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/include/Factories/FloorFactory.hpp" afterPath="$PROJECT_DIR$/include/Factories/FloorFactory.hpp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Loaders/FloorLoader.cpp" afterPath="$PROJECT_DIR$/src/Loaders/FloorLoader.cpp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/include/Loaders/FloorLoader.hpp" afterPath="$PROJECT_DIR$/include/Loaders/FloorLoader.hpp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/World.cpp" afterPath="$PROJECT_DIR$/src/World.cpp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/config/input.json" afterPath="$PROJECT_DIR$/config/input.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/floors/testfloor/testfloor.json" afterPath="$PROJECT_DIR$/data/floors/testfloor/testfloor.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/enemies/basic/basic.json" afterPath="$PROJECT_DIR$/data/enemies/basic/basic.json" />
     </list>
     <ignored path="Enter-The-Unknown.iws" />
     <ignored path=".idea/workspace.xml" />
