@@ -6,7 +6,10 @@
 
 World::World(State::Context con, const std::string &floorFileName)
 : context{*(con.window), *(con.textures), *(con.fonts)},
-textures(*(con.textures)), fonts(*(con.fonts)), drawStatsFlag{false}
+textures(*(con.textures)), fonts(*(con.fonts)), 
+drawStatsFlag{false},
+currentZoom{maxZoom/2}
+
 {
     stats.setFont(fonts[Fonts::Main]);
     stats.setCharacterSize(15);
@@ -32,7 +35,7 @@ void World::update(sf::Time deltaT)
 }
 
 void World::draw()
-{
+{    
     worldView.setCenter(player->position);
     context.window->setView(worldView);
 
@@ -56,13 +59,25 @@ void World::handleEvent(const sf::Event &event)
         {
             case sf::Keyboard::F1:
                 currentFloor->drawBoundings = !currentFloor->drawBoundings;
+                break;
             case sf::Keyboard::F2:
                 drawStatsFlag = !drawStatsFlag;
         }
 
     if (event.type == sf::Event::MouseWheelMoved)
     {
-        printf("Zoom: %d\n", event.mouseWheel.delta);
-        //worldView.zoom(worldView.ge)
+    
+        if (event.mouseWheel.delta < 0 && currentZoom > minZoom)
+        {
+            printf("Zoomout\n");
+            worldView.zoom(1.05f);
+            --currentZoom;
+        }
+        if (event.mouseWheel.delta > 0 && currentZoom < maxZoom)
+        {
+            printf("Zoomin\n");
+            worldView.zoom(.95f);
+            ++currentZoom;
+        }
     }
 }

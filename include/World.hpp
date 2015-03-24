@@ -19,6 +19,9 @@
 
 class World : private sf::NonCopyable
 {
+private:
+    const unsigned short minZoom = 0, maxZoom = 10;
+
 public:
 	explicit World(State::Context context, const std::string &floorFileName);
 
@@ -33,6 +36,7 @@ private:
     std::unique_ptr<Floor> currentFloor;
     
     sf::View worldView;    
+    int currentZoom;
     
     sf::Text stats;
     void drawStats();

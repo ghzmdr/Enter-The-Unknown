@@ -1,11 +1,19 @@
+//You can hack with these values, that's why I made configs human readable!
+//Possible values are: (ALL UPPERCASE!)
+
+// UP, DOWN, LEFT, RIGHT
+// LETTERS (A-Z)
+// LCTRL RCTRL LSHIFT RSHIFT
+// SPACE
+
 {
     "KEYBOARD" : {
-        "DOWN": "DOWN",
-        "UP": "UP",
-        "LEFT": "LEFT",
-        "RIGHT": "RIGHT",
+        "DOWN": "S",
+        "UP": "W",
+        "LEFT": "A",
+        "RIGHT": "D",
 
-        "RUN": "Z",
+        "RUN": "LSHIFT",
         "PRIMARY": "D",
         "SECONDARY": "C",    
     },

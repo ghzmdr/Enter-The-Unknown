@@ -12,7 +12,7 @@ public:
     virtual void update(Entity &parent);    
 
 private:
-    sf::Keyboard::Key left, right, up, down;
+    sf::Keyboard::Key left, right, up, down, run;
 };
 
 

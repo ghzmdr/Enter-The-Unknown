@@ -23,6 +23,11 @@ class Application
 
         void registerStates();
 
+        bool showStats;
+        sf::Text statsText;
+        void updateStats(sf::Time deltaT);        
+        sf::Time statsTime;
+        std::size_t statsNumFrames;
 
         State::Context context;
         

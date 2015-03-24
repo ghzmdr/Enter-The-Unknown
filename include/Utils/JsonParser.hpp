@@ -28,7 +28,7 @@ static void jsonErrMsg(bool condition, std::string &filename, const std::string 
 {
     if (!condition)
     {
-        printf("[!ERROR!] Could not read field %s from %s", field.c_str(), filename.c_str());
+        printf("[!ERROR!] Could not read field %s from %s\n", field.c_str(), filename.c_str());
         //exit(-1);
     }
 }

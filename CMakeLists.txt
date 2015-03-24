@@ -8,7 +8,7 @@ set(SOURCE_FILES
     src/Components/PhysicsComponent.cpp
     src/Components/MovementComponent.cpp
     src/Components/PlayerInputMovementComponent.cpp
-
+    src/Loaders/InputLoader.cpp
     src/json/json_writer.cpp
     src/json/json_tool.h
     src/json/json_value.cpp
