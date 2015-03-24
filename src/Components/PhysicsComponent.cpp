@@ -6,6 +6,7 @@
 void PhysicsComponent::update(Entity &parent, Floor &floor)
 {
     checkCollisions(floor.collidables, parent);
+    checkCollisions(floor.enemies, parent);
     checkBounds(floor.bounds, parent);
 }
 
@@ -14,8 +15,25 @@ void PhysicsComponent::checkCollisions(std::vector<Obstacle> &colliders, Entity 
     float actualSpeed = fabs(parent.lastSpeed);
 
     for (auto &collider : colliders)
+        checkObject(collider, parent, actualSpeed);
+}
+
+void PhysicsComponent::checkCollisions(std::vector<std::unique_ptr<Entity>> &entities, Entity &parent)
+{
+    float actualSpeed = fabs(parent.lastSpeed);
+
+    for (std::unique_ptr<Entity> &ent : entities)
     {
-        if (isObjectInRange(collider, parent))
+        if (ent.get() != &parent)
+            checkObject(*ent, parent, actualSpeed);
+        if (collides(*ent, parent))
+            printf("Parent collision\n");
+    }
+}
+
+void PhysicsComponent::checkObject(GameObject &collider, Entity &parent, float actualSpeed)
+{
+ if (isObjectInRange(collider, parent))
         {
             if (parent.right() >= collider.left() && parent.left() <= collider.right())
             {
@@ -48,8 +66,15 @@ void PhysicsComponent::checkCollisions(std::vector<Obstacle> &colliders, Entity 
                     else parent.velocity.x = 0;
                 }
             }
-        }
-    }
+        }   
+}
+
+bool PhysicsComponent::collides(GameObject &obj, GameObject &test)
+{
+    return  obj.left() <= test.right() && 
+            obj.right() >= test.left() &&
+            obj.top() <= test.bottom() && 
+            obj.top() >= test.bottom();
 }
 
 bool PhysicsComponent::isObjectInRange(GameObject &obj, GameObject &test)

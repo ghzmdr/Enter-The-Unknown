@@ -27,7 +27,7 @@ std::unique_ptr<Entity> static EntityFactory(const std::string &filename, Textur
         mv  = std::unique_ptr<MovementComponent>(new PlayerInputMovementComponent());
     // else load ai script and ai component
     else {
-        auto aiscript = entityData.getScriptFilename();
+        //auto aiscript = entityData.getScriptFilename();
         mv  = std::unique_ptr<MovementComponent>(new PlayerInputMovementComponent());
     }
 

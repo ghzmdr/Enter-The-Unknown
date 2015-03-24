@@ -48,7 +48,18 @@ void Floor::draw(sf::RenderTarget &target, sf::RenderStates states) const
 
     for (auto &enemy : enemies)
         if (isInBounds(enemy->position))
+        {
             target.draw(*enemy);
+            if (drawBoundings)
+            {
+                sf::RectangleShape b{enemy->size};
+                b.setFillColor(sf::Color::Transparent);
+                b.setPosition(enemy->left(), enemy->top());
+                b.setOutlineColor(sf::Color::Green);
+                b.setOutlineThickness(.5f);
+                target.draw(b);
+            }
+        }
 
     if (drawBoundings)
         for(auto &b : boundings)
@@ -104,3 +115,14 @@ void Floor::map2Layer(const MapData &source)
 
             //ELSE ADD VOID ZONE!
 }
+
+void Floor::setExit(sf::Vector2i pos)
+{
+    exit.position = {pos.x * 1.f, pos.y * 1.f};
+//    exit.setTexture(tileSheet);
+//    exit.setTextureRect({{(int)tileSheet.getSize().x / tileSize, (int)tileSheet.getSize().y / tileSize}, {tileSize, tileSize}});
+}
+
+GameObject& Floor::getExit() {return exit;}
+
+std::vector<Obstacle> Floor::getCollidables(){return collidables;}

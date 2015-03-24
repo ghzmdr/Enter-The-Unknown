@@ -8,6 +8,7 @@ JsonParser::JsonParser(const std::string &filename)
     if (!reader.parse(file, root))
     {
         printf("Could not parse json: %s\n", filename.c_str());
+        printf("Reason: %s\n", reader.getFormatedErrorMessages().c_str());
         //exit(EXIT_FAILURE);
     }
 }

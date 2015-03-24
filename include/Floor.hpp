@@ -14,6 +14,7 @@ class Floor : private sf::NonCopyable, public sf::Drawable, public sf::Transform
 {
 public:
     typedef std::vector<std::vector<short>> MapData;
+    const unsigned short drawOffset = 2;
 
 public:
     Floor(): drawBoundings{false}{};
@@ -22,45 +23,38 @@ public:
     void handleEvent(const sf::Event &event){};
 
     void setTileSheet(sf::Texture &ts);
+    
     void loadTileMap(MapData map);
     void loadCollidables(MapData map);
-
-    std::vector<Obstacle> getCollidables(){return collidables;}
-
     void loadEnemies(std::vector<EnemyData> enemiesData);
+
+    std::vector<Obstacle> getCollidables();
+    std::vector<std::unique_ptr<Entity>> getEnemies();
 
     sf::IntRect bounds;
     sf::FloatRect viewBounds;
     unsigned short tileSize;
 
     sf::Vector2i spawnPosition;
-    void setExit(sf::Vector2i pos)
-    {
-        exit.position = {pos.x * 1.f, pos.y * 1.f};
-        //exit.setTexture(tileSheet);
-        //exit.setTextureRect({{(int)tileSheet.getSize().x / tileSize, (int)tileSheet.getSize().y / tileSize}, {tileSize, tileSize}});
-    }
-
-    GameObject& getExit() {return exit;}
+    
+    GameObject& getExit();
+    void setExit(sf::Vector2i pos);
 
     bool drawBoundings;
     std::vector<Obstacle> collidables;
+    std::vector<std::unique_ptr<Entity>> enemies;
     TextureManager *textures;
 private:
-    const unsigned short drawOffset = 2;
-
-    const bool isInBounds(const sf::Vector2f &tile) const;
     virtual void draw(sf::RenderTarget &target, sf::RenderStates states) const;
-
-    TileMap tileMap;
-
-    sf::Texture tileSheet;
+    const bool isInBounds(const sf::Vector2f &tile) const;
     
     std::vector<sf::RectangleShape> boundings;
+    
+    TileMap tileMap;
 
     GameObject exit;
 
-    std::vector<std::unique_ptr<Entity>> enemies;
+    sf::Texture tileSheet;
 
     void map2Layer(const MapData &source);
 };

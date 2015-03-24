@@ -9,11 +9,11 @@ set(SOURCE_FILES
     src/Components/MovementComponent.cpp
     src/Components/PlayerInputMovementComponent.cpp
     src/Loaders/InputLoader.cpp
-    src/json/json_writer.cpp
-    src/json/json_tool.h
-    src/json/json_value.cpp
-    src/json/json_valueiterator.inl
-    src/json/json_reader.cpp
+    libs/src/json/json_writer.cpp
+    libs/src/json/json_tool.h
+    libs/src/json/json_value.cpp
+    libs/src/json/json_valueiterator.inl
+    libs/src/json/json_reader.cpp
     src/Editor/FloorEditor.cpp
     src/Entities/Entity.cpp
     src/GUI/Button.cpp
@@ -35,6 +35,6 @@ set(SOURCE_FILES
 
 LINK_DIRECTORIES(/usr/include/SFML)
 LINK_LIBRARIES(sfml-graphics sfml-window sfml-system)
-include_directories(include)
+include_directories(include libs/include)
 
 add_executable(Enter_The_Unknown ${HEADER_FILES} ${SOURCE_FILES})

@@ -19,6 +19,6 @@
     "CONTROLLER" : {
         "RUN": "A",
         "PRIMARY": "B",
-        "SECONDARY": "C",      
+        "SECONDARY": "C"      
     }
 }
